@@ -45,4 +45,4 @@
     - this is what the browser sees, which is essentially the front-end but all of this comes from the back-end/server side logic it constructs the html and css that is sent back.
     -  interaction and persisting on events like google news, weather, scores, new stories.
 
-- Static vs dynamic page, both are webpages, but dynamic pages change based off server side code.
+- Static vs dynamic page, both are webpages, but dynamic pages change based off server side code..
