@@ -43,6 +43,6 @@
     - fbook then decides what page to send me back
     - sends html,css and js and browser displays it.
     - this is what the browser sees, which is essentially the front-end but all of this comes from the back-end/server side logic it constructs the html and css that is sent back.
-    -  interaction and persisting on events like google news, weather, scores, new stories.
+    -  interaction and persisting actions on events like google news, weather, scores, new stories.
 
 - Static vs dynamic page, both are webpages, but dynamic pages change based off server side code..
