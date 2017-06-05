@@ -32,3 +32,17 @@
 
 
       - And this epic journey is played out trillions and trillions of times a day on this network of network which is the Internet.
+
+
+# Front-end vs Back-End
+
+- Example:
+    - let's go to www.facebook.com
+    - creates an http request asking for facebook.com
+    - the goes to fbooks server
+    - fbook then decides what page to send me back
+    - sends html,css and js and browser displays it.
+    - this is what the browser sees, which is essentially the front-end but all of this comes from the back-end/server side logic it constructs the html and css that is sent back.
+    -  interaction and persisting on events like google news, weather, scores, new stories.
+
+- Static vs dynamic page, both are webpages, but dynamic pages change based off server side code.
