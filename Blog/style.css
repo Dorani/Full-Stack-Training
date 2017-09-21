@@ -14,5 +14,10 @@ body {
 .date {
   color: #3498db;
   text-transform: uppercase;
-  letter-spacing: 10rem;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 2.0rem;
 }
