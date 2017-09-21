@@ -3,8 +3,10 @@ body {
   padding: 20px;
   max-width: 80%;
   margin: 20px auto;
+  font-family: Source Sans Pro;
 }
 
-p {
-  
+.quote {
+  border-left: 5px solid #bdc3c7;
+  padding-left: 5px;
 }
