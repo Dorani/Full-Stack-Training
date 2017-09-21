@@ -1,6 +1,6 @@
 body {
   border: 20px solid #bdc3c7;
   padding: 20px;
-  width: 700px;
-  margin: 0 auto;
+  max-width: 80%;
+  margin: 20px auto;
 }
