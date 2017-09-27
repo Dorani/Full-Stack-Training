@@ -9,4 +9,16 @@ doMath();
   // x is not defined
   // x was declared locally within the function scope doMath
   // and not globally outside the function
+
+
+
+var y = 99;
+
+  function doMoreMath(){
+    console.log(y);
+  }
+  doMoreMath();//99
+  //when we define somehting outside the function we still have access to it inside of the function
+  //but the opp is NOT true
+
   
