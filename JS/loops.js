@@ -6,3 +6,6 @@ for(init, condition, step){
 
 //ie:
 //print numbers 1 to 5
+for (var count = 0; count < 6; count++){
+  console.log(count);
+}
