@@ -21,4 +21,16 @@ var y = 99;
   //when we define somehting outside the function we still have access to it inside of the function
   //but the opp is NOT true
 
-  
+
+//now what if we define a var locally within the function scope that is the exact same declaration in the
+//global scope but the value is diff
+
+var y = 99;
+
+  function doMoreMath(){
+    y = 100;
+    console.log(y);
+  }
+  doMoreMath();//100
+
+  //1st it will see if there are any var declared locally and if there are it doesnt need to access anything else
