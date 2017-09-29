@@ -9,3 +9,16 @@ function print(arr){
 }
 
 print(comments.data);
+
+
+
+// another way to do this:
+
+function(){
+  this.data.forEach(function(el){
+    console.log(el);
+  });
+}
+
+//this.data is how u go inside of print and access this data
+//a good way to access data that was pre-defined
