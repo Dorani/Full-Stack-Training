@@ -34,3 +34,6 @@ var styles = {
 
 // to do this in js:
 document.querySelector("h1").style.color="orange";
+
+//make all lis blue
+$("li").css("color", "blue");
