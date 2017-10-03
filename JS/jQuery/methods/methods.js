@@ -44,3 +44,16 @@ $("img").attr("src", "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAk
 //but if you want to adjust 1 of 3 images
 
 $("img:first-of-type").attr("src", "url of picture you want to change")
+
+
+
+
+//.val() return val which will tell us which element is selected
+
+$('input').val();
+//whatever is in the input is grabed as val
+//if we want to clear values
+$('input').val("");
+//with an empty string to reset text input
+//works on all elements with a val attr
+  //including drop down menys
