@@ -37,3 +37,10 @@ document.querySelector("h1").style.color="orange";
 
 //make all lis blue
 $("li").css("color", "blue");
+
+//to do the above code in js
+
+var lis = document.querySelectorAll("li");
+for(var i = 0; i < lis.length; i++){
+  lis[i].style.color="blue"
+};
