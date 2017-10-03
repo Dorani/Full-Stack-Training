@@ -57,3 +57,26 @@ $('input').val("");
 //with an empty string to reset text input
 //works on all elements with a val attr
   //including drop down menys
+
+
+
+
+////----------------------------------------------
+//jquery analogs
+//class methods
+// add classess to elements
+addClass()
+
+$("h1").addClass("correct");
+//turns green
+//inspect it correct
+$("h1").removeClass("correct");
+//no longer has that class
+
+//can do it to a collection
+
+$("h1").addClass("wrong");
+//adjust class
+
+$('li').toggleClass("correct")
+//remove it
