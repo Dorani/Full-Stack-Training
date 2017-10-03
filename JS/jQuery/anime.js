@@ -44,3 +44,12 @@ var lis = document.querySelectorAll("li");
 for(var i = 0; i < lis.length; i++){
   lis[i].style.color="blue"
 };
+
+//another way:
+//query selecto and querySelectorAll in one way
+
+$("li").css({
+  fontSize: "10px",
+  border:"3px dashed purple",
+  background: "rgba(89,45,20, 0.5)"
+});
