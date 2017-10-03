@@ -30,7 +30,7 @@ var styles = {
   fontWeight: "bold"
 }
 
-("#special").css(styles);
+("#special").css(styles);//already proven to be powerful, time saver and makes code cleaner!
 
 // to do this in js:
 document.querySelector("h1").style.color="orange";
