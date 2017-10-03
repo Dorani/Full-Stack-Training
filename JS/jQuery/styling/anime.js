@@ -46,7 +46,7 @@ for(var i = 0; i < lis.length; i++){
 };
 
 //another way:
-//query selecto and querySelectorAll in one way
+//query selector and querySelectorAll in one way
 
 $("li").css({
   fontSize: "10px",
