@@ -75,3 +75,12 @@ $('button').on("click", function(){
     console.log("slide is down");
   });// where it decides what to do
 });//pass anonm funct, so only prints when slide is DONE!
+
+
+
+//remove after Sliddingggggg
+('button').on("click", function(){
+  $("div").slideToggle(1000, function(){
+    $(this).remove(); //good use for todo list
+  });
+});
