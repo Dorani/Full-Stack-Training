@@ -3,6 +3,7 @@
 //on() used 99% of the times
 
 //-----------------------------------
+//CLICK() METHOD:
 
 //print when item with id 'submit is clicked
 
@@ -34,3 +35,25 @@ $("button").click(function(){
   });
 
   // refering to elements that are clicked
+
+
+
+//--------------------------------------------
+
+//KEYPRESS() METHOD:
+
+//keyup(), keydown(), keypress(), check the docs for more!
+
+//works kinda like the click method in that,
+//select something, chain on .keypress and pass in a callback function
+
+//anytime a key is pressed in an input field consolelog something
+$("input").keypress(function(){
+  console.log("key pressed");
+});
+// type a key and you should see a console log for every charater
+
+//run a code based off a key pressed?
+$("input").keypress(function(event){//event obj will contain information
+  console.log("event");
+});
