@@ -82,6 +82,16 @@ $("a").on("dragstart", function(){
   console.log("drag started");
 });
 
+//when i click on it, change all H1 to change to purple
+$("h1").on("click", function(){
+  $("h1").css("color", "purple")
+});
+
+// if you want something more specific use this
+$("h1").on("click", function(){
+  $(this).css("color", "purple")// what this does, is ensure the only element clicked on in all h1's is manipulated
+});
+
 $("input[type="text"]").on("keypress", function({
   alert("key press in an input");
-}));
+});
