@@ -57,3 +57,12 @@ $("input").keypress(function(){
 $("input").keypress(function(event){//event obj will contain information
   console.log("event");
 });
+//which: refers to the code of the key pressed
+// the letter c code = 67
+// we do this a lot, we use key codes to do something, like a conditionals
+
+$("input").keypress(function(event){//event obj will contain information
+  if(event.which === 13){ //event obj added to callback, it was being passed in regardless, but now we are passing it in
+    alert ("you hit enter!");
+  }
+});
