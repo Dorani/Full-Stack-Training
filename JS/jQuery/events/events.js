@@ -18,3 +18,8 @@ $("#submit").click(function(){
 $("button").click(function(){
   alert("somone clicked button");
 });
+
+//in vanJS to add an event lister to a collection of buttons
+  // SELECT them all with querySelector
+  // for loop to loop thorugh all of them
+  // then add an event lsner
