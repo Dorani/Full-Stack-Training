@@ -45,3 +45,33 @@ $("button").on("click", function(){
 $("button").on("click", function(){
   $('div').fadeToggle(500);
 })
+
+
+
+//Sliddingggggg
+
+
+//slidedown()
+// rather than animating the opacity, it animates the height
+
+$('button').on("click", function(){
+  $("div").slideDown();
+});
+//when button is click, slide down the div by animating their respective heights when gradually being displayed
+
+$('button').on("click", function(){
+  $("div").slideUp();
+});
+
+
+$('button').on("click", function(){
+  $("div").slideToggle();// where it decides what to do
+});
+
+
+
+$('button').on("click", function(){
+  $("div").slideToggle(500, function(){
+    console.log("slide is down");
+  });// where it decides what to do
+});//pass anonm funct, so only prints when slide is DONE!
