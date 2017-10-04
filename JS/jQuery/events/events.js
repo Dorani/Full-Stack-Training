@@ -23,3 +23,10 @@ $("button").click(function(){
   // SELECT them all with querySelector
   // for loop to loop thorugh all of them
   // then add an event lsner
+
+//when all button are clicked change the background when clicked
+  $("button").click(function(){
+    $(this).css("background", "pink") //this will refer to the element that was clicked on
+  });
+
+  //do not forget to use the jquery version of this
