@@ -66,3 +66,22 @@ $("input").keypress(function(event){//event obj will contain information
     alert ("you hit enter!");
   }
 });
+
+//-----------------------------------------------------------
+
+//ON() METHOD
+//very similar to the add event lsner
+//where we give it the name of the event we want, specificity
+//its not JUST FOR click events, on() supports all types of events
+
+$("button").on('dblckick', function(){
+  alert("double clicked");
+});
+
+$("a").on("dragstart", function(){
+  console.log("drag started");
+});
+
+$("input[type="text"]").on("keypress", function({
+  alert("key press in an input");
+}));
