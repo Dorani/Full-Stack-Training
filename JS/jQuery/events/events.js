@@ -92,6 +92,18 @@ $("h1").on("click", function(){
   $(this).css("color", "purple")// what this does, is ensure the only element clicked on in all h1's is manipulated
 });
 
-$("input[type="text"]").on("keypress", function({
-  alert("key press in an input");
+$("input").on("keypress", function(){
+  console.log("kepressed")
+});
+//everytime i type a key
+
+
+//how about when we hover over a button?, make bold
+$("button").on("mousseenter", function(){
+  $(this).css("font-weight", "bold");
+});
+
+//back to normal after however
+$("button").on("mouseleave", function(){
+  $(this).css("font-weight", "normal");
 });
