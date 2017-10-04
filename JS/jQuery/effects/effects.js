@@ -38,3 +38,10 @@ $("button").on("click", function(){
     console.log("divs are back");
   });
 });
+
+
+// FadeToggle()
+// works the same way
+$("button").on("click", function(){
+  $('div').fadeToggle(500);
+})
