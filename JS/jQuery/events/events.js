@@ -2,10 +2,6 @@
 //keypress()
 //on() used 99% of the times
 
-
-
-
-
 //-----------------------------------
 
 //print when item with id 'submit is clicked
@@ -30,3 +26,11 @@ $("button").click(function(){
   });
 
   //do not forget to use the jquery version of this
+
+  //another ie:
+  $("button").click(function(){
+    var text = $(this).text();
+    console.log("you clicked" + text);
+  });
+
+  // refering to elements that are clicked
