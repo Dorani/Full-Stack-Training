@@ -17,8 +17,12 @@
 //   }
 // });
 
-//above code in 1 line:
-
+//above code 1 click event and a method:
 $("li").click(function(){
   $(this).toggleClass("completed");
+});
+//click on x to delete todo
+$("span").click(function(event){
+  $(this).parent().remove();
+  event.stopPropagation();
 });
