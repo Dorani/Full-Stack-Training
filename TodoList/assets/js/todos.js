@@ -34,6 +34,8 @@ $("span").click(function(event){
   event.stopPropagation();//prevents event bubling to other elements
 });
 
-$("input[type='text']").keypress(function(){
-  console.log("keypress");
+$("input[type='text']").keypress(function(event){
+  if(event.which === 13){
+    console.log('you hit enter');
+  }
 });
