@@ -40,6 +40,8 @@ span{
   margin-right: 20px;
   text-align: center;
   color: white;
+  width: 40px;
+  display: inline-block;
 }
 
 input{
