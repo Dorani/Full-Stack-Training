@@ -38,7 +38,9 @@ $("input[type='text']").keypress(function(event){
   if(event.which === 13){
     //grabing new todo text from input
     var todoText = $(this).val();
+    //giv val an empty sting as a setter
+    $(this).val("");//clears
     //create new li and add to ul
-    $("ul").append("<li>" + todoText + "</li>")//select one ul and take the string and add it to ul as html
+    $("ul").append("<li><span>X</span> " + todoText + "</li>")//select one ul and take the string and add it to ul as html
   }
 });
