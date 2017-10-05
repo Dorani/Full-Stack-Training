@@ -44,3 +44,9 @@ $("input[type='text']").keypress(function(event){
     $("ul").append("<li><span>X</span> " + todoText + "</li>")//select one ul and take the string and add it to ul as html
   }
 });
+
+
+//the updates are basically the following;
+  //we were unable to use the delete function on new appended lis
+  // so we use on rather than .click that specifies lis in the future
+  // so we add event lsners to the elements that exists when page loads to we can account for them in the tdoo
