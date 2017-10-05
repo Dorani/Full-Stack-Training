@@ -10,7 +10,22 @@ h1{
 
 ul{
   list-style: none;
+  margin: 0;
+  padding:0;
 }
+
+body{
+  font-family: roboto;
+}
+
+li{
+background: #fff;
+}
+
+li:nth-child(2n){
+  background: #f7f7f7;
+}
+
 
 #container{
   width: 360px;
