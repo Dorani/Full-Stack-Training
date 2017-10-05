@@ -18,12 +18,12 @@
 // });
 
 //above code 1 click event and a method:
-$("li").click(function(){
+$("ul").on("click", "li",function(){// add a lsner to an element that exists when a page loads, but we are lsning to the li's inside that ul
   $(this).toggleClass("completed");
 });
 //click on x to delete todo
 //when we click on a span
-$("span").click(function(event){
+$("ul").on("click","span",function(event){
   //this refers to element clicked on
   //.parent means we are working with the li that encloses the span
   //.fadeOut on the li
