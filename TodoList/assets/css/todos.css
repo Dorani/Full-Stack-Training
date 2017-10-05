@@ -34,6 +34,12 @@ input{
   color: #2980b9;
 }
 
+input:focus{
+  background: #fff;
+  border: 3px solid #2980b9;
+  outline: none;
+  }
+
 li:nth-child(2n){
   background: #f7f7f7;
 }
