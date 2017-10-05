@@ -1,3 +1,11 @@
+h1{
+  background: #2980b9;
+  color: white;
+  margin: 0;
+}
+
+
+
 #container{
   width: 360px;
   margin: 100px auto;
