@@ -34,6 +34,14 @@ line-height: 40px;
 color: #666;
 }
 
+span{
+  background-color: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+}
+
 input{
   font-size: 18px;
   background-color: f7f7f7;
