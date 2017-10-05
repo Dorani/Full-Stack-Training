@@ -40,8 +40,12 @@ span{
   margin-right: 20px;
   text-align: center;
   color: white;
-  width: 40px;
+  width: 0;
   display: inline-block;
+}
+
+li:hover span{
+
 }
 
 input{
