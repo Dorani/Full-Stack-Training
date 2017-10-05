@@ -37,6 +37,8 @@ $("span").click(function(event){
 $("input[type='text']").keypress(function(event){
   if(event.which === 13){
     //grabing new todo text from input
-    console.log($(this.).val());//this refers to input and it console.logs the value that was inputed
+    var todoText = $(this).val();
+    //create new li and add to ul
+    $("ul").append("<li>this is a new li that we appended to this ul</li>")//select one ul and take the string and add it to ul as html
   }
 });
