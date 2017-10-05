@@ -22,7 +22,14 @@ $("li").click(function(){
   $(this).toggleClass("completed");
 });
 //click on x to delete todo
+//when we click on a span
 $("span").click(function(event){
-  $(this).parent().remove();
-  event.stopPropagation();
+  //this refers to element clicked on
+  //.parent means we are working with the li that encloses the span
+  //.fadeOut on the li
+  // this refers to the li not the span, then thats removed
+  $(this).parent().fadeOut(function(){
+    $(this).remove();
+  });
+  event.stopPropagation();//prevents event bubling to other elements
 });
