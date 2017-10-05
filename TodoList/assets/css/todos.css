@@ -7,7 +7,9 @@ h1{
   font-size: 24px;
   font-weight: normal;
 }
-
+.fa-pencil{
+  float:right;
+}
 body{
   background: #00c6ff;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
