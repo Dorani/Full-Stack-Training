@@ -1,6 +1,7 @@
 #container{
   width: 360px;
-  margin: 0 auto;
+  margin: 100px auto;
+  background: #f7f7f7;
   border: 2px solid grey;
 }
 
