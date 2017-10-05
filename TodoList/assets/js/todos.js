@@ -36,6 +36,7 @@ $("span").click(function(event){
 
 $("input[type='text']").keypress(function(event){
   if(event.which === 13){
-    console.log('you hit enter');
+    //grabing new todo text from input
+    console.log($(this.).val());//this refers to input and it console.logs the value that was inputed
   }
 });
