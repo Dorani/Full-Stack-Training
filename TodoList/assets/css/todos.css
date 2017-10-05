@@ -20,6 +20,18 @@ body{
 
 li{
 background: #fff;
+height: 40px;
+line-height: 40px;
+color: #666;
+}
+
+input{
+  font-size: 18px;
+  background-color: f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+  color: #2980b9;
 }
 
 li:nth-child(2n){
