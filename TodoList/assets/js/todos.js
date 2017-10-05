@@ -41,7 +41,7 @@ $("input[type='text']").keypress(function(event){
     //giv val an empty sting as a setter
     $(this).val("");//clears
     //create new li and add to ul
-    $("ul").append("<li><span>X</span> " + todoText + "</li>")//select one ul and take the string and add it to ul as html
+    $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + todoText + "</li>")//select one ul and take the string and add it to ul as html
   }
 });
 
