@@ -42,10 +42,11 @@ span{
   color: white;
   width: 0;
   display: inline-block;
+  transition: 0.2s linear;
 }
 
 li:hover span{
-
+  width: 40px;
 }
 
 input{
