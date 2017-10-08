@@ -17,3 +17,6 @@ array.indexOf('Banana');//isolate the index//1
 array.splice();//Adds and/or removes elements from an array.
 
 array.reverse();//reverse order of array
+
+var removedItem = array.splice(pos, 1); // this is how to remove an item
+//
