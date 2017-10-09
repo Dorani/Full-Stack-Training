@@ -18,3 +18,8 @@
 //components:
   // nav bars
   // really cool stuff!
+
+
+//1st step:
+//download bootstrap
+  
