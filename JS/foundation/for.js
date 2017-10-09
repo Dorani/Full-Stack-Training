@@ -43,3 +43,14 @@ while(count < colors.length){//the condition
   console.log(colors[count]);//print
   count++;//increment inside the loop
 }
+//for loop
+// in the for loop we are dealing with a number
+// using that number to access the array
+
+// for each
+// we have a temporary placeholder
+// used inside a function
+
+//while loop
+//more syntax
+//rarely used
