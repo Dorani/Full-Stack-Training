@@ -12,11 +12,12 @@ var last = fruits[fruits.length - 1];
 
 array.unshift('lemon');//add lemon to the top of list, the 0 index.
 
+array.shift//removes top 0 element
+
 array.indexOf('Banana');//isolate the index//1
 
-array.splice();//Adds and/or removes elements from an array.
+array.splice();//to copy array or index
 
 array.reverse();//reverse order of array
 
 var removedItem = array.splice(pos, 1); // this is how to remove an item
-//
