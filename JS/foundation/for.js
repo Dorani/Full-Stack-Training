@@ -27,6 +27,11 @@ for(var i = 0; i < color.length; i++){//i starts at 0, then we add 1 to i, and w
 
 
 var colors = ['red','green','orange'];//create an array and assign it to color
-colors.forEach(function(color){
-  console.log(color);
+colors.forEach(function(color){//color is holding the value of each item in the array as we loop through it
+  console.log(color);//then logging the indiv colors
 });
+
+//we dont have to work with i
+//colors[i]
+//no for loop syntax
+//all that we access is what we call inside the callback
