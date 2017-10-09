@@ -35,3 +35,11 @@ colors.forEach(function(color){//color is holding the value of each item in the 
 //colors[i]
 //no for loop syntax
 //all that we access is what we call inside the callback
+
+
+//while loop example for show:
+var count = 0 //define count var and set it to 0
+while(count < colors.length){//the condition
+  console.log(colors[count]);//print
+  count++;//increment inside the loop
+}
