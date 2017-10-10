@@ -22,4 +22,11 @@
 
 //1st step:
 //download bootstrap
-  
+  // open file after compressed
+  // move bootstrap.css into our directory
+  // this will allow us to use all the classes that are included
+  // buttons, .btn-danger
+  // the . min just opens faster so easier to load but does not matter
+
+
+  // then go into your html with an href and include bootstrap
