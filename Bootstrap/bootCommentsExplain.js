@@ -27,6 +27,6 @@
   // this will allow us to use all the classes that are included
   // buttons, .btn-danger
   // the . min just opens faster so easier to load but does not matter
-
+  // the cdn also works, its a link to the hosted version of the min-file
 
   // then go into your html with an href and include bootstrap
