@@ -18,6 +18,10 @@ and using the grid system we can pick how many of the 12 units each element can 
         background: pink;
         border: 1px solid purple;
       }
+      .orange{
+        background: orange;
+        border: 1px dashed red;
+      }
     </style>
   </head>
   <body>
@@ -29,10 +33,15 @@ and using the grid system we can pick how many of the 12 units each element can 
         <div class="col-lg-3 col-md-2 pink">COL LG </div>
       </div> -->
       <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 pink">COL LG 6</div>
-        <div class="col-lg-3 col-md-3 col-sm-6 pink">COL LG 6</div>
-        <div class="col-lg-3 col-md-3 col-sm-6 pink">COL LG 6</div>
-        <div class="col-lg-3 col-md-3 col-sm-6 pink">COL LG 6</div>
+        <div class="col-md-3 col-sm-6 pink">
+          <div class="row">
+            <div class="col-lg-6 orange">1st half</div>
+            <div class="col-lg-6 orange">2nd half</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 pink">COL LG </div>
+        <div class="col-md-3 col-sm-6 pink">COL LG </div>
+        <div class="col-md-3 col-sm-6 pink">COL LG </div>
       </div>
     </div>
   </body>
