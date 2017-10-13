@@ -46,3 +46,11 @@
     -  interaction and persisting actions on events like google news, weather, scores, new stories.
 
 - Static vs dynamic page, both are webpages, but dynamic pages change based off server side code..
+
+# Inside main directory:
+
+- html
+- css
+- bootstrap
+- javascript
+- jquery
