@@ -2,7 +2,7 @@ body{
   background: url(https://images.unsplash.com/photo-1480241352829-e1573ff2414e?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=);
   background-size: cover;
   background-position: center;
-
+  font-family: Lato;
 }
 
 #content {
