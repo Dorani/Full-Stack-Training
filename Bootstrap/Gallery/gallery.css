@@ -6,6 +6,10 @@ body {
   color: #2c3e50;
 }
 
-.navbar-inverse {
+.navbar-inverse  {
   background: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
 }
