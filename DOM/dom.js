@@ -52,7 +52,7 @@ setInterval(function(){
   } else {
     body.style.background = "blue";
   }
-  isBlue = !isBlue;
+  isBlue = !isBlue;//change our isBlue var from false to true
 },1000);
 //set interval takes 2 arguments
   // 1st is some code: function
@@ -61,5 +61,3 @@ setInterval(function(){
   // checks if background is currently blue
   // if it is, it changes it to white
   // and it repeats for white as well
-
-  
