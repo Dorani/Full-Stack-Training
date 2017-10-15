@@ -45,3 +45,12 @@ var body = document.querySelector('body');
 //gives me the obj rep of the body element and assigns it a var
 var isBlue = false;
 //bool to use to know if im going frorm blue to white and white to blue
+
+setInterval(function(){
+  if (isBlue){
+    body.style.background = "white";
+  } else {
+    body.style.background = "blue";
+  }
+  isBlue = !isBlue;
+},1000);
