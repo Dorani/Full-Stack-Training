@@ -36,4 +36,12 @@ h1.style.color = 'pink';
 //select + manipulating above
 
 
-//
+// Animation:
+//every sec we change background color of body between blue and white
+  // select body
+  // manipulate
+
+var body = document.querySelector('body');
+//gives me the obj rep of the body element and assigns it a var
+var isBlue = false;
+//bool to use to know if im going frorm blue to white and white to blue
