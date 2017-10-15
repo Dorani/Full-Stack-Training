@@ -54,3 +54,12 @@ setInterval(function(){
   }
   isBlue = !isBlue;
 },1000);
+//set interval takes 2 arguments
+  // 1st is some code: function
+  // 2nd is time, number in miliseconds (1000) ie 1 second
+  // every 1 second it will call this code
+  // checks if background is currently blue
+  // if it is, it changes it to white
+  // and it repeats for white as well
+
+  
