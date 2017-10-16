@@ -54,3 +54,4 @@
 - bootstrap
 - javascript
 - jquery
+- DOM Manipulation
