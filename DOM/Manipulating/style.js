@@ -17,3 +17,17 @@ tag.style.marginTop = "200px";
 //structure, behavior and presentation
 //html is pure structure and css is pure style
 //js controls behavior
+
+
+
+//instead of the above code
+// we can define a class in css
+//style.css
+.some-class {
+  color: blue;
+  border: 10px solid red;
+}
+
+//add the new class to the selected element
+var tag = document.getElementById("highlight");
+tag.classList.add("some-class");
