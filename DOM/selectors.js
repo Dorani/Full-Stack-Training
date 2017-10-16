@@ -4,11 +4,8 @@
 document.getElementById();
 //takes in id name, returns element with that id
 //example with selector.html
-  var tag = document.getElementById('highlight');
+var tag = document.getElementById('highlight');
 //call the method, pass in a single string argument, then it finds a matching element with that id and returns it
-
-
-
 
 document.getElementsByClassName();
 //its plural, also by class name, still isolating though
@@ -28,7 +25,18 @@ document.getElementsByTagName();
 //objects
 var tags = document.getElementsByTagName('li');
 
+//--------------------------------------------------------------------------//
 
+//takes a css style selector
+//if you want an id
+//can do this with class name as well
+//but it will only gives the 1st one,
+//querySelector only gives one matching
+//the very 1st hit actually
 document.querySelector();
+var tag = document.querySelector('#highlight');
+
+
+
 
 document.querySelectorAll();
