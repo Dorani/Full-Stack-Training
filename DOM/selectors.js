@@ -44,3 +44,4 @@ document.querySelectorAll();
 var tags = document.querySelectorAll('h1');
 //returns all h1s
 //not the 1st hit like the above selector
+//it still works if there is only one match!
