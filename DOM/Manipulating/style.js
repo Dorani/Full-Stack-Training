@@ -31,3 +31,7 @@ tag.style.marginTop = "200px";
 //add the new class to the selected element
 var tag = document.getElementById("highlight");
 tag.classList.add("some-class");
+//classList method to see if element has classes assigned to it
+//add is a method
+//remove is a method
+//.toggle takes a class name and if the element has that class already it will then remove, if it doesnt it will turn it on
