@@ -35,3 +35,7 @@ tag.classList.add("some-class");
 //add is a method
 //remove is a method
 //.toggle takes a class name and if the element has that class already it will then remove, if it doesnt it will turn it on
+//seperate the responsiblities!!
+
+//rather than manually manipulating, changes things as little as possible, using predefined class in ur css.
+//not technically an array btw.
