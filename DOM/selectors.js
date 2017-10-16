@@ -40,3 +40,7 @@ var tag = document.querySelector('#highlight');
 
 
 document.querySelectorAll();
+//this will return ALL elements associated with the id or class its querySelector
+var tags = document.querySelectorAll('h1');
+//returns all h1s
+//not the 1st hit like the above selector
