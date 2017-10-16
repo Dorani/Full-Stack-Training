@@ -9,9 +9,12 @@ document.getElementById();
 
 
 
-document.getElementByClassName();
-//
-
+document.getElementsByClassName();
+//its plural, also by class name, still isolating though
+//class can occur as many times which is why its plural
+//in action
+var tags = document.getElementsByClassName('bolded');
+//tags will return 2 obj with bolded props
 
 
 
