@@ -28,3 +28,11 @@ button.addEventListener('click', function(){
 //assign and select
 var button = document.querySelector('button');
 var paragraph = document.querySelector('p');
+
+//setup click listener
+
+button.addEventListener('click',function(){
+  paragraph.textContent = 'soneone clicked me';
+});
+//click lsner, the callback function, when clicked, we changed the paragraph to someonone clicked
+//simple
