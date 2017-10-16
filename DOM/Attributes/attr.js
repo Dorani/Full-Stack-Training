@@ -5,7 +5,7 @@
 
 //1st lets select and Assign
 var link = document.querySelector('a');
-//lets get the attribute 1st to see it
+//lets get the attribute to retrieve the source
 link.getAttribute('href');//www.google.com
 //change the href attribute
 link.setAttribute('href', 'wwww.dogs.com');
