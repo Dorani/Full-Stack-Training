@@ -16,3 +16,15 @@ button.addEventListener('click', function(){
 //give it 2 arguments
   // type of event we want to listen for
   // code we want to run when that event takes place, ie a callback function, which only runs when event is fired
+
+
+//-----------------------------------------------
+
+//displaying a message when a button is clicked
+<button>click me</button>
+<p>no one has clicked me yet</p>
+
+//what do we do 1st?
+//assign and select
+var button = document.querySelector('button');
+var paragraph = document.querySelector('p');
