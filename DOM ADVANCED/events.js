@@ -47,3 +47,20 @@ for(var i = 0; i<lis.length; i++){
     this.style.color = 'purple' //this refers to the element selected, then we are adjusting the styles
   });
 }
+
+
+
+
+
+//------------------------------------------
+
+//another way:
+
+var button = document.querySelector('button');
+var paragraph = document.querySelector('paragraph');
+
+button.addEventListener("click", changeText);
+
+function changeText(){
+  paragraph.textContent = "change";
+}
