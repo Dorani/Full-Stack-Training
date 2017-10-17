@@ -36,3 +36,14 @@ button.addEventListener('click',function(){
 });
 //click lsner, the callback function, when clicked, we changed the paragraph to someonone clicked
 //simple
+
+
+// say we have a list of lis we want to adjust
+// start by selecting the list
+var lis = document.querySelectorAll('li');
+// now we need to loop through the list
+for(var i = 0; i<lis.length; i++){
+  lis[i].addEventListener('click', function(){ //click event on lis indivisual, function excecuted
+    this.style.color = 'purple' //this refers to the element selected, then we are adjusting the styles
+  });
+}
