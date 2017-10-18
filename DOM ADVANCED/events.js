@@ -56,11 +56,11 @@ for(var i = 0; i<lis.length; i++){
 
 //another way:
 
-var button = document.querySelector('button');
-var paragraph = document.querySelector('paragraph');
+var button = document.querySelector('button');//assign and select
+var paragraph = document.querySelector('paragraph');//same
 
-button.addEventListener("click", changeText);
+button.addEventListener("click", changeText);//selected element gets an event lsner with a param
 
-function changeText(){
-  paragraph.textContent = "change";
+function changeText(){//param is func
+  paragraph.textContent = "change";//does the following, changes content inside p tag
 }
