@@ -8,5 +8,11 @@ var isPurple = false; //start off like this
 //assign-isolate-select
 
 button.addEventListener('click', function(){
+  if(isPurple){
+  document.body.style.background = 'white';
+  isPurple = false;
+} else {
   document.body.style.background = 'purple';
+  isPurple = true;
+}
 });
