@@ -4,6 +4,7 @@
 
 
 var button = document.querySelector('button');
+var isPurple = false; //start off like this
 //assign-isolate-select
 
 button.addEventListener('click', function(){
