@@ -18,3 +18,7 @@ button.addEventListener('click', function(){
 
 //we can also toggle the class on and off on the body
 //creating a css class for pruple with
+
+button.addEventListener('click', function(){
+  document.body.classList.toggle('purple';)
+});
