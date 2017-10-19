@@ -15,3 +15,6 @@ button.addEventListener('click', function(){
 }
   isPurple = !isPurple;
 });
+
+//we can also toggle the class on and off on the body
+//creating a css class for pruple with
