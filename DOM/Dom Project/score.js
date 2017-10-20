@@ -4,6 +4,8 @@ var p1Button = document.querySelector('#p1');
 var p2Button = document.querySelector('#p2');
 var p1Display = document.querySelector('#p1Display');
 var p2Display = document.querySelector('#p2Display');
+var resetButton = document.querySelector('#reset');
+console.log(resetButton);
 //we now need a way to keep track of score
 var p1Score = 0;
 var p2Score = 0;
