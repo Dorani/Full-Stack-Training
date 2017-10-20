@@ -10,8 +10,14 @@ var p2Score = 0;
 //select the h1 to start
 var h1 = document.querySelector('p1Display');
 
-//set up event handler, with callback and alert for now
+//set up event lsner, with callback and alert for now
 p1Button.addEventListener('click', function(){
   p1Score++;
   p1Display.textContent = p1Score;//now take the h1 and change the context to be wtvr the score is
+});
+
+//set up event lsner, with callback and alert for now
+p2Button.addEventListener('click', function(){
+  p2Score++;
+  p2Display.textContent = p2Score;//now take the h1 and change the context to be wtvr the score is
 });
