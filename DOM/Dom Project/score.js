@@ -20,7 +20,7 @@ p1Button.addEventListener('click', function(){
     p1Score++;
     //now after we add 1 to player1 score, we will check if his score = winning score
     if(p1Score === winningScore){
-      console.log('game over');
+      gameOver = true;//prevent us from adding more to score
     }
     p1Display.textContent = p1Score;//now take the h1 and change the context to be wtvr the score is
   }
