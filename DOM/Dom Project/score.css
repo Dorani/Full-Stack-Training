@@ -1,3 +1,36 @@
 .winner {
   color: green;
 }
+
+body {
+  display: block;
+  margin: auto;
+  width: 40%;
+  text-align: center;
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+}
+
+body p {
+  font-size: 250%;
+}
+
+#p1 {
+  height:200px;
+  width:200px;
+  background-color: orange;
+}
+
+#p2 {
+  height:200px;
+  width:200px;
+  background-color: yellow;
+}
+
+#reset {
+  height:200px;
+  width:200px;
+  background-color: red;
+
+}
