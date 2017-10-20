@@ -5,6 +5,7 @@ var p2Button = document.querySelector('#p2');
 var p1Display = document.querySelector('#p1Display');
 var p2Display = document.querySelector('#p2Display');
 var resetButton = document.querySelector('#reset');
+var numInput = document.querySelector('input');//input selected to change winning score
 
 //we now need a way to keep track of score
 var p1Score = 0;
@@ -56,3 +57,8 @@ resetButton.addEventListener('click', function(){
   gameOver = false;
 });
 //above is core functionality of app
+
+
+numInput.addEventListener('change', function(){//change event will run anytime a value changes
+  alert('changed input');
+});
