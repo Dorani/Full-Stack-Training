@@ -5,7 +5,7 @@ var p2Button = document.querySelector('#p2');
 var p1Display = document.querySelector('#p1Display');
 var p2Display = document.querySelector('#p2Display');
 var resetButton = document.querySelector('#reset');
-console.log(resetButton);
+
 //we now need a way to keep track of score
 var p1Score = 0;
 var p2Score = 0;
@@ -40,4 +40,8 @@ p2Button.addEventListener('click', function(){
     }
     p2Display.textContent = p2Score;//now take the h1 and change the context to be wtvr the score is
   }
+});
+
+resetButton.addEventListener('click', function(){
+  console.log('clicked');
 });
