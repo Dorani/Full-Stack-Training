@@ -43,5 +43,10 @@ p2Button.addEventListener('click', function(){
 });
 
 resetButton.addEventListener('click', function(){
-  console.log('clicked');
+  //reset player to be 0 in local memory
+  p1Score = 0;
+  p2Score = 0;
+  //the score needs to change on the page
+  p1Display.textContent = 0;
+  p2Display.textContent = 0;
 });
