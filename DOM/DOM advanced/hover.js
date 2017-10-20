@@ -1,18 +1,12 @@
-var firstLI = document.querySelector('li');
+var lis = document.querySelectorAll('li');
 
+//what if we want to apply to all lis:
 
-
-
-firstLI.addEventListener('mouseover', function(){
-  firstLI.style.color = "green";
-});
-
-//when we hover over the 1st list item
-//we will fire a lsner called mouseover and execute a function
-//that will change the style of that specific element
-
-
-firstLI.addEventListener('mouseout', function(){
-  firstLI.style.color = "black";
-});
-//hover off it and it turns black
+for(var i = 0; i < lis.length; i++){
+  lis[i].addEventListener('mouseover', function(){
+    this.style.color = "green";
+  });
+  lis[i].addEventListener('mouseout', function(){
+    this.style.color = "black";
+  });
+}
