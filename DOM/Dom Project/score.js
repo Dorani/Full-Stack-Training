@@ -33,6 +33,7 @@ p2Button.addEventListener('click', function(){
     p2Score++;
     //now after we add 1 to player1 score, we will check if his score = winning score
     if(p2Score === winningScore){
+      p2Display.classList.add("winner");
       gameOver = true;//prevent us from adding more to score
     }
     p2Display.textContent = p2Score;//now take the h1 and change the context to be wtvr the score is
