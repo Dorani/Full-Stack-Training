@@ -1,7 +1,9 @@
 .winner {
   color: green;
 }
-
+h1{
+  background-color: blue;
+}
 body {
   display: block;
   margin: auto;
@@ -9,8 +11,8 @@ body {
   text-align: center;
   line-height: 200px;
   height: 200px;
-  border: 3px solid green;
 }
+
 
 body p {
   font-size: 250%;
