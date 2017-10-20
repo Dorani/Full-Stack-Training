@@ -49,4 +49,8 @@ resetButton.addEventListener('click', function(){
   //the score needs to change on the page
   p1Display.textContent = 0;
   p2Display.textContent = 0;
+  //remove the winner class from both players
+  p1Display.classList.remove('winner');
+  p2Display.classList.remove('winner');
+
 });
