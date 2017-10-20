@@ -7,6 +7,10 @@ var p2Display = document.querySelector('#p2Display');
 //we now need a way to keep track of score
 var p1Score = 0;
 var p2Score = 0;
+
+//we need to set game modes
+var gameOver = false;// not true at beg of game
+var winningScore = 5;//set cap for clicking on p1 or p2, game should end at 5
 //select the h1 to start
 var h1 = document.querySelector('p1Display');
 
