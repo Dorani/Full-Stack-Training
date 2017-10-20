@@ -28,6 +28,12 @@ p1Button.addEventListener('click', function(){
 
 //set up event lsner, with callback and alert for now
 p2Button.addEventListener('click', function(){
-  p2Score++;
-  p2Display.textContent = p2Score;//now take the h1 and change the context to be wtvr the score is
+  if(!gameOver){//if not game over, then add to score
+    p2Score++;
+    //now after we add 1 to player1 score, we will check if his score = winning score
+    if(p2Score === winningScore){
+      gameOver = true;//prevent us from adding more to score
+    }
+    p2Display.textContent = p2Score;//now take the h1 and change the context to be wtvr the score is
+  }
 });
