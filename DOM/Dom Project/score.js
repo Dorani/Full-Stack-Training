@@ -16,8 +16,14 @@ var h1 = document.querySelector('p1Display');
 
 //set up event lsner, with callback and alert for now
 p1Button.addEventListener('click', function(){
-  p1Score++;
-  p1Display.textContent = p1Score;//now take the h1 and change the context to be wtvr the score is
+  if(!gameOver){//if not game over, then add to score
+    p1Score++;
+    //now after we add 1 to player1 score, we will check if his score = winning score
+    if(p1Score === winningScore){
+      console.log('game over');
+    }
+    p1Display.textContent = p1Score;//now take the h1 and change the context to be wtvr the score is
+  }
 });
 
 //set up event lsner, with callback and alert for now
