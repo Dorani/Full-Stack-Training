@@ -55,3 +55,4 @@ resetButton.addEventListener('click', function(){
   //set game over back to fasle, which will enable us to keep playing
   gameOver = false;
 });
+//above is core functionality of app
