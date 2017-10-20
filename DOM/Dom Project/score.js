@@ -52,5 +52,6 @@ resetButton.addEventListener('click', function(){
   //remove the winner class from both players
   p1Display.classList.remove('winner');
   p2Display.classList.remove('winner');
-
+  //set game over back to fasle, which will enable us to keep playing
+  gameOver = false;
 });
