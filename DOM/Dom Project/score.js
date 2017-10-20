@@ -3,8 +3,10 @@
 var p1Button = document.querySelector('#p1');
 var p2Button = document.querySelector('#p2');
 var p1Display = document.querySelector('#p1Display');
+var p2Display = document.querySelector('#p2Display');
 //we now need a way to keep track of score
 var p1Score = 0;
+var p2Score = 0;
 //select the h1 to start
 var h1 = document.querySelector('p1Display');
 
