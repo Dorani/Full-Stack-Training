@@ -19,8 +19,14 @@ var colors = [
 
 //select all of these, loop through, and assign one of these colors
 //to a sqaures background-color
-
 var squares = document.querySelectorAll(".square");
+var pickedColor = colors[3];
+var colorDisplay = document.getElementById("colorDisplay");
+//iso a color
+
+//update colorDisplay
+colorDisplay.textContent = pickedColor;
+
 for (var i = 0 ; i < squares.length; i++){
   //each squares
   squares[i].style.backgroundColor = colors[i];//take that i and use it access colors
