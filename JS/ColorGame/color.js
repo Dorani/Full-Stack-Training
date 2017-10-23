@@ -28,6 +28,11 @@ var colorDisplay = document.getElementById("colorDisplay");
 colorDisplay.textContent = pickedColor;
 
 for (var i = 0 ; i < squares.length; i++){
+  //add initial colors to squares
   //each squares
   squares[i].style.backgroundColor = colors[i];//take that i and use it access colors
+  //add click lsners to squares
+  squares[i].addEventListener("click", function(){
+    alert("clicked a sqaure");
+  });
 }
