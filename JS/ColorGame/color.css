@@ -9,3 +9,8 @@ padding-bottom: 30%;
 float: left;
 margin: 1.66%;
 }
+
+#container {
+  margin: 0 auto;
+  max-width: 600px;
+}
