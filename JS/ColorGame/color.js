@@ -26,13 +26,20 @@ var colorDisplay = document.getElementById("colorDisplay");
 
 //update colorDisplay
 colorDisplay.textContent = pickedColor;
-
+//start loop
 for (var i = 0 ; i < squares.length; i++){
   //add initial colors to squares
   //each squares
   squares[i].style.backgroundColor = colors[i];//take that i and use it access colors
   //add click lsners to squares
   squares[i].addEventListener("click", function(){
-    alert("clicked a sqaure");
+    //grab color of clicked squares
+    var clickedColor = this.style.background;
+    //compare color to pickedColor
+    if(clickedColor === pickedColor){
+      alert("correct");
+    } else {
+      alert('wrong');
+    }
   });
 }
