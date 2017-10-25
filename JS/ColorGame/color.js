@@ -30,7 +30,7 @@ colorDisplay.textContent = pickedColor;
 for (var i = 0 ; i < squares.length; i++){
   //add initial colors to squares
   //each squares
-  squares[i].style.backgroundColor = colors[i];//take that i and use it access colors
+  squares[i].style.background = colors[i];//take that i and use it access colors
   //add click lsners to squares
   squares[i].addEventListener("click", function(){
     //grab color of clicked squares
@@ -39,7 +39,7 @@ for (var i = 0 ; i < squares.length; i++){
     if(clickedColor === pickedColor){
       alert("correct");
     } else {
-      this.background.style = "#232323";
+      this.style.background = "#232323";
     }
   });
 }
