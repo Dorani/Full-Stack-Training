@@ -16,6 +16,7 @@ var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
+var h1 = document.querySelector("h1");
 //iso a color
 
 //update colorDisplay
@@ -34,6 +35,7 @@ for (var i = 0 ; i < squares.length; i++){
       messageDisplay.textContent = "Correct!";
       //calling the new function change colors and pass in the var we create that is the style/background of color clicked
       changeColors(clickedColor);
+      h1.style.background = clickedColor;
     } else {
       this.style.background = "#232323";
       messageDisplay.textContent = " Try Again!";
