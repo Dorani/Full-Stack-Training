@@ -71,3 +71,7 @@ function changeColors(color){
     //return that array
     return arr;
   }
+
+  function randomColor(){
+    
+  }
