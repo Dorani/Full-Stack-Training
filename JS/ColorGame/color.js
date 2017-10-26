@@ -20,7 +20,7 @@ var colors = [
 //select all of these, loop through, and assign one of these colors
 //to a sqaures background-color
 var squares = document.querySelectorAll(".square");
-var pickedColor = colors[3];
+var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 //iso a color
@@ -53,7 +53,13 @@ function changeColors(color){
   for(var i = 0; i < squares.length; i++){
     //change each color to match given color
     squares[i].style.background = color;
-
   }
-
 }
+
+
+  function pickColor(){
+    Math.random()
+    //pick a random number between 0 and the end of the index of the array
+
+    //use that number to access the color of the array and pick it
+  }
