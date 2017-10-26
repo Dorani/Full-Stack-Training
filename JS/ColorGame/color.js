@@ -58,10 +58,12 @@ function changeColors(color){
 
 
   function pickColor(){//
-    Math.floor(Math.random * colors.length);
+    var random = Math.floor(Math.random() * colors.length);
+    return colors[random];
     //generate a number between 0 and 1 and multiple it by the length of the array
     //pick a random number between 0 and the end of the index of the array
     // math.floor chops of deci
+    //we need to save it all to a var and use that var to access an element of the array at THAT index
 
     //use that number to access the color of the array and pick it
   }
