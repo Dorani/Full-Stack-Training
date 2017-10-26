@@ -73,5 +73,8 @@ function changeColors(color){
   }
 
   function randomColor(){
-    
+    //pick a red,green,blue from 0 to 255
+    var red = Math.floor(math.random() * 256)
+  
+
   }
