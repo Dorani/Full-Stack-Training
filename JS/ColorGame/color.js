@@ -22,7 +22,8 @@ var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
 
 easyBtn.addEventListener("click", function(){
-  alert('button clicked')
+  hardBtn.classList.add("removed");
+  easyBtn.classList.add("selected");
 });
 
 hardBtn.addEventListener("click", function(){
