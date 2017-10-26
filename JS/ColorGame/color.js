@@ -39,7 +39,8 @@ for (var i = 0 ; i < squares.length; i++){
     //compare color to pickedColor
     if(clickedColor === pickedColor){
       messageDisplay.textContent = "Correct!";
-      //calling the new function change colors
+      //calling the new function change colors and pass in the var we create that is the style/background of color clicked
+      changeColors(clickedColor);
     } else {
       this.style.background = "#232323";
       messageDisplay.textContent = " Try Again!";
