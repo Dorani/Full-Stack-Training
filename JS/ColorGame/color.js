@@ -63,6 +63,11 @@ function changeColors(color){
 
   function generateRandomColors(num){
     //make an array
+    var arr = []
     //add num  random colors to array
+    for(var i = 0; i < num; i++){
+      //get random color and push into array
+    }
     //return that array
+    return arr;
   }
