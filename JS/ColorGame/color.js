@@ -67,6 +67,7 @@ function changeColors(color){
     //add num  random colors to array
     for(var i = 0; i < num; i++){
       //get random color and push into array
+      arr.push(randomColor());
     }
     //return that array
     return arr;
