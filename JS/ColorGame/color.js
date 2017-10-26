@@ -8,14 +8,7 @@
 
 //make a list of colors
 
-var colors = [
-  "rgb(255, 0, 0)",
-  "rgb(255, 255, 0)",
-  "rgb(0, 255, 0)",
-  "rgb(0, 255, 255)",
-  "rgb(0, 0, 255)",
-  "rgb(255, 0, 255)"
-]
+var colors = generateRandomColors(6); //function to generate random colors, takes a single argument, for squares
 
 //select all of these, loop through, and assign one of these colors
 //to a sqaures background-color
@@ -66,4 +59,10 @@ function changeColors(color){
     //we need to save it all to a var and use that var to access an element of the array at THAT index
 
     //use that number to access the color of the array and pick it
+  }
+
+  function generateRandomColors(num){
+    //make an array
+    //add num  random colors to array
+    //return that array
   }
