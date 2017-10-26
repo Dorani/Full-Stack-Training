@@ -20,7 +20,16 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 
 resetButton.addEventListener("click", function(){
-  alert('works');
+  //generate all new colors
+  colors = generateRandomColors(6);
+  //pick a new random color from array
+  pickedColor = pickColor();
+  //change color display to match picked color
+  colorDisplay.textContent = pickedColor;
+  //change the colors of the squares on the page
+  for(var i = 0; i < squares.length; i++){
+    squares[i].style.background = colors[i];
+  }
 });
 //iso a color
 
