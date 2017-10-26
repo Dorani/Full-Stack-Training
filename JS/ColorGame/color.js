@@ -80,6 +80,6 @@ function changeColors(color){
     var b = Math.floor(Math.random() * 256);
 
     //synthesizes them into string
-    return "rgb(" + r +"," + g +"," + b +")";
+    return "rgb(" + r +", " + g +", " + b +")";//spaces after the commmas are so important, when we compare the clickedcolor === pickedcolor they syntax here is crucial
 
   }
