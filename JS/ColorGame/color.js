@@ -30,6 +30,8 @@ resetButton.addEventListener("click", function(){
   for(var i = 0; i < squares.length; i++){
     squares[i].style.background = colors[i];
   }
+  //we want to make sure the h1 is back to normal after win and button resets game
+  h1.style.background = "#232323";
 });
 //iso a color
 
@@ -47,6 +49,8 @@ for (var i = 0 ; i < squares.length; i++){
     //compare color to pickedColor
     if(clickedColor === pickedColor){
       messageDisplay.textContent = "Correct!";
+      //we want to make sure the button content changes when done/reset
+      resetButton.textContent = "Play Again";
       //calling the new function change colors and pass in the var we create that is the style/background of color clicked
       changeColors(clickedColor);
       h1.style.background = clickedColor;
