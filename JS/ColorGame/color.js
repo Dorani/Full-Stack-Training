@@ -24,7 +24,8 @@ var hardBtn = document.querySelector("#hardBtn");
 easyBtn.addEventListener("click", function(){
   hardBtn.classList.remove("selected");
   easyBtn.classList.add("selected");
-  colors = generateRandomColors(3);
+  numSquares = 3;
+  colors = generateRandomColors(numSquares);
   pickedColor = pickColor();
   colorDisplay.textContent = pickedColor;
   //loop and hide
