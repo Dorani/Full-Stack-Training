@@ -27,7 +27,8 @@ easyBtn.addEventListener("click", function(){
 });
 
 hardBtn.addEventListener("click", function(){
-  alert('button clicked')
+  hardBtn.classList.remove("selected");
+  easyBtn.classList.add("selected");
 });
 
 resetButton.addEventListener("click", function(){
