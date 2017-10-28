@@ -2,16 +2,13 @@
 //and we will be provided rgb color (222,333,4)
 //we then have to guess which color it is
 //the color will be provided below
-
 //assign 6 colors that are always the same
-
-
 //make a list of colors
-
-var colors = generateRandomColors(6); //function to generate random colors, takes a single argument, for squares
-
 //select all of these, loop through, and assign one of these colors
 //to a sqaures background-color
+//-------------------------------------------------------------------
+
+var colors = generateRandomColors(6); //function to generate random colors, takes a single argument, for squares
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
@@ -89,7 +86,6 @@ function changeColors(color){
     //pick a random number between 0 and the end of the index of the array
     // math.floor chops of deci
     //we need to save it all to a var and use that var to access an element of the array at THAT index
-
     //use that number to access the color of the array and pick it
   }
 
