@@ -41,7 +41,8 @@ easyBtn.addEventListener("click", function(){
 hardBtn.addEventListener("click", function(){
   hardBtn.classList.add("selected");
   easyBtn.classList.remove("selected");
-  colors = generateRandomColors(6);
+  numSquares = 6;
+  colors = generateRandomColors(numSquares);
   pickedColor = pickColor();
   colorDisplay.textContent = pickedColor;
   //loop and hide
