@@ -8,8 +8,8 @@
 //to a sqaures background-color
 //-------------------------------------------------------------------
 
-var numberOfSquares = 6;
-var colors = generateRandomColors(6); //function to generate random colors, takes a single argument, for squares
+var numSquares = 6;
+var colors = generateRandomColors(numSquares); //function to generate random colors, takes a single argument, for squares
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
