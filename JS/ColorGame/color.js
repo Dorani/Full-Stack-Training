@@ -23,6 +23,7 @@ easyBtn.addEventListener("click", function(){
   easyBtn.classList.add("selected");
   colors = generateRandomColors(3);
   pickedColor = pickColor();
+  colorDisplay.textContent = pickedColor;
 });
 
 hardBtn.addEventListener("click", function(){
