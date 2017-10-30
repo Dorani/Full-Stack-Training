@@ -57,6 +57,7 @@ button {
   color: steelblue;
   letter-spacing: 1px;
   font-size: inherit;
+  transition: all 0.4s;
 }
 
 button:hover {
