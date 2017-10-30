@@ -64,7 +64,7 @@ resetButton.addEventListener("click", function(){
     squares[i].style.background = colors[i];
   }
   //we want to make sure the h1 is back to normal after win and button resets game
-  h1.style.background = "#232323";
+  h1.style.background = "#steelblue";
 });
 //iso a color
 
