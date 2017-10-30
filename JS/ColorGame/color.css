@@ -11,6 +11,7 @@ padding-bottom: 30%;
 float: left;
 margin: 1.66%;
 border-radius: 15%;
+transition: background 0.6s;
 }
 
 #colorDisplay {
