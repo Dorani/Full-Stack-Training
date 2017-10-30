@@ -45,4 +45,6 @@ h1{
 button {
   border: none;
   background: none;
+  text-transform: uppercase;
+  height: 100%;
 }
