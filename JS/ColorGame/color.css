@@ -26,8 +26,8 @@ transition: background 0.6s;
 }
 
 #container {
-  margin: 0 auto;
-  max-width: 800px;
+  margin: 20px auto;
+  max-width: 600px;
 }
 
 h1{
@@ -43,7 +43,7 @@ h1{
 
 #stripe {
   background-color: white;
-  height: 30px;
+  height: 40px;
   text-align: center;
 }
 
