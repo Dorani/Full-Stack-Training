@@ -44,7 +44,8 @@ h1{
 }
 
 .selected {
-  background: blue;
+  color: white;
+  background: steelblue;
 }
 
 button {
@@ -56,4 +57,9 @@ button {
   color: steelblue;
   letter-spacing: 1px;
   font-size: inherit;
+}
+
+button:hover {
+  color: white;
+  background: steelblue;
 }
