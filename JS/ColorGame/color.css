@@ -23,6 +23,7 @@ h1{
   font-weight: normal;
   background: steelblue;
   margin: 0;
+  text-transform: uppercase;
 }
 
 #stripe {
