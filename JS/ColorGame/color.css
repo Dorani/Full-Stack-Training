@@ -19,6 +19,7 @@ h1{
   text-align: center;
   color: white;
   background: steelblue;
+  margin: 0;
 }
 
 #stripe {
