@@ -1,6 +1,7 @@
 body {
   background-color: #232323;
   margin: 0;
+  font-family: "Montserrat", "Avenir";
 }
 
 .square {
@@ -19,6 +20,7 @@ margin: 1.66%;
 h1{
   text-align: center;
   color: white;
+  font-weight: normal;
   background: steelblue;
   margin: 0;
 }
