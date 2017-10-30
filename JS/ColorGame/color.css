@@ -16,6 +16,11 @@ margin: 1.66%;
   font-size: 200%;
 }
 
+#message {
+  display: inline-block;
+  width: 20%;
+}
+
 #container {
   margin: 0 auto;
   max-width: 800px;
