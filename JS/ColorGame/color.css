@@ -12,6 +12,10 @@ float: left;
 margin: 1.66%;
 }
 
+#colorDisplay {
+  font-size: 200%;
+}
+
 #container {
   margin: 0 auto;
   max-width: 800px;
@@ -19,11 +23,13 @@ margin: 1.66%;
 
 h1{
   text-align: center;
+  line-height: 1.1;
   color: white;
   font-weight: normal;
   background: steelblue;
   margin: 0;
   text-transform: uppercase;
+  padding : 20px 0;
 }
 
 #stripe {
