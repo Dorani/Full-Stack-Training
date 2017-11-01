@@ -55,3 +55,4 @@
 - javascript
 - jquery
 - DOM Manipulation
+- Projects
