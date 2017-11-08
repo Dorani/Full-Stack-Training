@@ -7,11 +7,13 @@
 //select all of these, loop through, and assign one of these colors
 //to a sqaures background-color
 //-------------------------------------------------------------------
-
+//var that are not selecting things
 var numSquares = 6;
-var colors = generateRandomColors(numSquares); //function to generate random colors, takes a single argument, for squares
+var colors = [];//it can be an empty array
+var pickedColor;
+
+//var that are selecting htings
 var squares = document.querySelectorAll(".square");
-var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
