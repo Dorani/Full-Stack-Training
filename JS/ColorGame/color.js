@@ -23,7 +23,7 @@ for(var i = 0; i < modeButtons.length; i++){
     modeButtons[0].classList.remove("selected");
     modeButtons[1].classList.remove("selected");
     this.class.add("selected");
-    this.textContent === "Easy" ? numSquares =3: numSquares = 6;
+    this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
     reset();
   });
 }
@@ -39,7 +39,12 @@ function reset(){
 
   //change the colors of the squares on the page
   for(var i = 0; i < squares.length; i++){
-    squares[i].style.background = colors[i];
+    if(color[i]){
+      squares[i].style.background = colors[i];
+    } else {
+      squares[i].style.display = "none";
+    }
+
   }
   //we want to make sure the h1 is back to normal after win and button resets game
   h1.style.background = "#steelblue";
