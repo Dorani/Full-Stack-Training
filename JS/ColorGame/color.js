@@ -81,21 +81,7 @@ function reset(){
 // });
 
 resetButton.addEventListener("click", function(){
-  //generate all new colors
-  colors = generateRandomColors(numSquares);
-  //pick a new random color from array
-  pickedColor = pickColor();
-  //change color display to match picked color
-  colorDisplay.textContent = pickedColor;
-  this.textContent = "New Colors";
-  messageDisplay.textContent = "";
-
-  //change the colors of the squares on the page
-  for(var i = 0; i < squares.length; i++){
-    squares[i].style.background = colors[i];
-  }
-  //we want to make sure the h1 is back to normal after win and button resets game
-  h1.style.background = "#steelblue";
+  reset();
 });
 //iso a color
 
