@@ -112,10 +112,8 @@ function reset(){
 resetButton.addEventListener("click", function(){
   reset();
 });
-//iso a color
 
-//update colorDisplay
-colorDisplay.textContent = pickedColor;
+
 
 function changeColors(color){
   //loop through all squares
