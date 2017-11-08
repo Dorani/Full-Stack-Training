@@ -39,12 +39,11 @@ function reset(){
 
   //change the colors of the squares on the page
   for(var i = 0; i < squares.length; i++){
-    if(color[i]){
+    if(colors[i]){
       squares[i].style.background = colors[i];
     } else {
-      squares[i].style.display = "none";
+      squares[i].display = "none";
     }
-
   }
   //we want to make sure the h1 is back to normal after win and button resets game
   h1.style.background = "#steelblue";
