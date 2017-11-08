@@ -24,6 +24,24 @@ init();
 
 function init(){
   setupModeButtons();
+  setUpSquares();
+  reset();
+}
+
+function setupModeButtons(){
+  //mode buttons event listeners
+  for(var i = 0; i < modeButtons.length; i++){
+    modeButtons[i].addEventListener("click", function(){
+      modeButtons[0].classList.remove("selected");
+      modeButtons[1].classList.remove("selected");
+      this.classList.add("selected");
+      this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
+      reset();
+    });
+  }
+}
+
+function setUpSquares(){
   for (var i = 0 ; i < squares.length; i++){
     //add click lsners to squares
     squares[i].addEventListener("click", function(){
@@ -41,20 +59,6 @@ function init(){
         this.style.background = "#232323";
         messageDisplay.textContent = " Try Again!";
       }
-    });
-  }
-  reset();
-}
-
-function setupModeButtons(){
-  //mode buttons event listeners
-  for(var i = 0; i < modeButtons.length; i++){
-    modeButtons[i].addEventListener("click", function(){
-      modeButtons[0].classList.remove("selected");
-      modeButtons[1].classList.remove("selected");
-      this.classList.add("selected");
-      this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
-      reset();
     });
   }
 }
