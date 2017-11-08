@@ -18,7 +18,11 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
 
-
+for(var i = 0; i < modeButtons.length; i++){
+  modeButtons[i].addEventListener("click", function(){
+    this.class.add("selected");
+  });
+}
 
 easyBtn.addEventListener("click", function(){
   hardBtn.classList.remove("selected");
