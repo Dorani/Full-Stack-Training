@@ -21,6 +21,7 @@ var modeButtons = document.querySelectorAll(".mode");
 init();
 
 function init(){
+  //mode buttons event listeners
   for(var i = 0; i < modeButtons.length; i++){
     modeButtons[i].addEventListener("click", function(){
       modeButtons[0].classList.remove("selected");
@@ -28,6 +29,25 @@ function init(){
       this.classList.add("selected");
       this.textContent === "Easy" ? numSquares = 3: numSquares = 6;
       reset();
+    });
+  }
+  for (var i = 0 ; i < squares.length; i++){
+    //add click lsners to squares
+    squares[i].addEventListener("click", function(){
+      //grab color of clicked squares
+      var clickedColor = this.style.background;
+      //compare color to pickedColor
+      if(clickedColor === pickedColor){
+        messageDisplay.textContent = "Correct!";
+        //we want to make sure the button content changes when done/reset
+        resetButton.textContent = "Play Again";
+        //calling the new function change colors and pass in the var we create that is the style/background of color clicked
+        changeColors(clickedColor);
+        h1.style.background = clickedColor;
+      } else {
+        this.style.background = "#232323";
+        messageDisplay.textContent = " Try Again!";
+      }
     });
   }
 }
@@ -93,29 +113,6 @@ resetButton.addEventListener("click", function(){
 
 //update colorDisplay
 colorDisplay.textContent = pickedColor;
-//start loop
-for (var i = 0 ; i < squares.length; i++){
-  //add initial colors to squares
-  //each squares
-  squares[i].style.background = colors[i];//take that i and use it access colors
-  //add click lsners to squares
-  squares[i].addEventListener("click", function(){
-    //grab color of clicked squares
-    var clickedColor = this.style.background;
-    //compare color to pickedColor
-    if(clickedColor === pickedColor){
-      messageDisplay.textContent = "Correct!";
-      //we want to make sure the button content changes when done/reset
-      resetButton.textContent = "Play Again";
-      //calling the new function change colors and pass in the var we create that is the style/background of color clicked
-      changeColors(clickedColor);
-      h1.style.background = clickedColor;
-    } else {
-      this.style.background = "#232323";
-      messageDisplay.textContent = " Try Again!";
-    }
-  });
-}
 
 function changeColors(color){
   //loop through all squares
