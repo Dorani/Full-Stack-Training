@@ -6,10 +6,10 @@
     <script type="text/javascript" src="paper-full.js"></script>
     <link rel="stylesheet" type="text/css" href="circle.css">
   <script type="text/paperscript" canvas="myCanvas">
-
-    var myCircle2 = new Path.Circle(new Point(300, 150), 100);
-    myCircle2.fillColor = 'purple';
-
+    for(var x = 0; x < 1000; x+= 100){
+      var myCircle2 = new Path.Circle(new Point(x, 0), 10);
+      myCircle2.fillColor = 'purple';
+    }
 </script>
   </head>
   <body>
