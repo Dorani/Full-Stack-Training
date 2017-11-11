@@ -67,6 +67,11 @@ button {
   outline: none;
 }
 
+#reset{
+  width: 200px;
+  left: 30px;
+}
+
 button:hover {
   color: white;
   background: steelblue;
