@@ -28,7 +28,11 @@
     //and everytime we press a key
     //we will add a circle created to the array
     //so we will create a loop through it
-
+    for(var i = 0; i < circles.length, i++){
+      //on every frame we loop thorugh all circles in the array
+      //add 1 to each ones hues, every frame
+      circles[i].fillColor.hue += 1;
+    }
 
     //everytime there is a new frame
     //we add one to the hue of animated circle
