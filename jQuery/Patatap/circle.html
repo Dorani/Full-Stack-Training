@@ -7,8 +7,11 @@
     <link rel="stylesheet" type="text/css" href="circle.css">
 
   <script type="text/paperscript" canvas="myCanvas">
+
+  var circles = [];
+
   function onKeyDown(event) {
-    var circle = [];
+
     //paper js way:
     var maxPoint = new Point(view.size.width, view.size.height);
     //take max point and generate a random Point, use the rand method
@@ -16,9 +19,8 @@
     var randomPoint = Point.random();
     //take that and pass it into a new var called point and multiply those 2 points
     var point = maxPoint * randomPoint;
-
-    var newCircle = new Path.Circle(point, 10);
-    newCircle.fillColor = 'yellow';
+    var newCircle = new Path.Circle(point, 10)
+    newCircle.fillColor = "yellow";
     circles.push(newCircle);
   }
 
@@ -34,6 +36,7 @@
       //on every frame we loop thorugh all circles in the array
       //add 1 to each ones hues, every frame
       circles[i].fillColor.hue += 1;
+      circles[i].scale(.9);
     }
 
     //everytime there is a new frame
@@ -41,13 +44,8 @@
     animatedCircle.fillColor.hue += 1;
     //we want to scale down the circle as it fades away
     //every frame it shrinks and shrinks till it disapears
-    animatedCircle.scale(.99);
-
-
-
-
-
   }
+
 </script>
 </head>
   <body>
