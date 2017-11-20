@@ -24,12 +24,21 @@
   animatedCircle.fillColor = "red";
 
   function onFrame(event){
+    //an array of circles will be needed
+    //and everytime we press a key
+    //we will add a circle created to the array
+    //so we will create a loop through it
+
+
     //everytime there is a new frame
     //we add one to the hue of animated circle
     animatedCircle.fillColor.hue += 1;
     //we want to scale down the circle as it fades away
     //every frame it shrinks and shrinks till it disapears
     animatedCircle.scale(.99);
+
+
+
 
 
   }
