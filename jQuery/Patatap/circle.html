@@ -20,8 +20,14 @@
     new Path.Circle(point, 10).fillColor = 'yellow';
   }
 
-  var animatedCircle = new Path.circle(new Point(300,300), 100);
+  var animatedCircle = new Path.Circle(new Point(300,300), 100);
   animatedCircle.fillColor = "red";
+
+  function onFrame(event){
+    //everytime there is a new frame
+    //we add one to the hue of animated circle
+    animatedCircle.fillColor.hue += 1;
+  }
 </script>
 </head>
   <body>
