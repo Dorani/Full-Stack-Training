@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Circles</title>
     <script type="text/javascript" src="paper-full.js"></script>
@@ -11,24 +11,11 @@
     //paper js way:
     var maxPoint = new Point(view.size.width, view.size.height);
     console.log(maxPoint);
-
-    //now instead of giving the new path circle a new Point
-    //we will give it maxPoint
-
-
-	new Path.Circle(maxPoint, 10).fillColor = 'yellow';
-
-  //use these coordinates
-
-
-}
-
-
-
-
+    
+    new Path.Circle(maxPoint, 10).fillColor = 'yellow';
+  }
 </script>
-
-  </head>
+</head>
   <body>
     <canvas id="myCanvas" resize></canvas>
   </body>
