@@ -8,6 +8,7 @@
 
   <script type="text/paperscript" canvas="myCanvas">
   function onKeyDown(event) {
+    var circle = [];
     //paper js way:
     var maxPoint = new Point(view.size.width, view.size.height);
     //take max point and generate a random Point, use the rand method
@@ -17,7 +18,7 @@
     var point = maxPoint * randomPoint;
     console.log(maxPoint);
 
-    new Path.Circle(point, 10).fillColor = 'yellow';
+    circles.push(new Path.Circle(point, 10).fillColor = 'yellow';
   }
 
   var animatedCircle = new Path.Circle(new Point(300,300), 100);
