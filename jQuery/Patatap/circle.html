@@ -16,9 +16,10 @@
     var randomPoint = Point.random();
     //take that and pass it into a new var called point and multiply those 2 points
     var point = maxPoint * randomPoint;
-    console.log(maxPoint);
 
-    circles.push(new Path.Circle(point, 10).fillColor = 'yellow';
+    var newCircle = new Path.Circle(point, 10);
+    newCircle.fillColor = 'yellow';
+    circles.push(newCircle);
   }
 
   var animatedCircle = new Path.Circle(new Point(300,300), 100);
