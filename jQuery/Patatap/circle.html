@@ -11,7 +11,8 @@
     //paper js way:
     var maxPoint = new Point(view.size.width, view.size.height);
     //take max point and generate a random Point, use the rand method
-    var randomPoint = Point.random
+    //gives us a random point between 0 and 10
+    var randomPoint = Point.random();
     console.log(maxPoint);
 
     new Path.Circle(maxPoint, 10).fillColor = 'yellow';
