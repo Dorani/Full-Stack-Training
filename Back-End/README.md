@@ -20,3 +20,10 @@
           - content type = which is the language it will respond back to the client in
           - date and time, when the request and response took place
           - status: a number, 202, 404 etc... part of protocol of http, standardized way to say that the request that was made is fine and sends back status code 200.
+          - you can send data with a query string using a GET request, and if the server is expecting a name parameter then it will respond
+
+### In Postman
+
+  - make a GET request to reddit.com and click on params and what that will let you do, is add a url parameter, key and value and postman will make the request and add the string
+      - click send and go to the body, we get a bunch of html and css where you can isolate
+      
