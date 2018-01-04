@@ -19,4 +19,13 @@ app.get("/dogs", function(req, res){
 // lsning for a get request to / dogs
 // retrrives all of the dogs from database
 // rendering the dogs.ejs file
-//
+
+
+app.post("/createdog", function(req, res){
+  Dog.create({
+    name: req.body.name,
+    breed: req.body.breed
+  }, function(err, dog){
+  res.redirect("/dogs");
+  });
+});
