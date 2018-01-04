@@ -13,3 +13,7 @@ app.get("/dogs", function(req, res){
     res.render("dogs",{dogs: dogs});
   });
 })
+// lsning for a get request to / dogs
+// retrrives all of the dogs from database
+// rendering the dogs.ejs file
+// 
