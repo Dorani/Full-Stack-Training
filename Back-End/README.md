@@ -26,6 +26,7 @@
 
   - make a GET request to reddit.com and click on params and what that will let you do, is add a url parameter, key and value and postman will make the request and add the string
       - click send and go to the body, we get a bunch of html and css where you can isolate
+      - go to the body, depending on the type of request, if it is a post request, you can pass in the paramaters from the body tag in the form-data
 
 
 ### Back-end
