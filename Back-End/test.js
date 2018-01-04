@@ -6,3 +6,10 @@ app.get("/", function(req, res){
 //we are rendering a page called home
 
 // we will have a homepage.ejs file that will represent that route
+
+
+app.get("/dogs", function(req, res){
+  dog.find({}, function(err, dogs){
+    res.render("dogs",{dogs: dogs});
+  });
+})
