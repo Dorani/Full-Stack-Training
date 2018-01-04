@@ -26,4 +26,17 @@
 
   - make a GET request to reddit.com and click on params and what that will let you do, is add a url parameter, key and value and postman will make the request and add the string
       - click send and go to the body, we get a bunch of html and css where you can isolate
-      
+
+
+### Back-end
+
+  - After a request is made to reddits server, there will be code on the server that will be listening for different requests and responding with diff pieces:
+      - starting the server, and the app will be hosted on localhost 3000
+      - in our terminal, we run the name of the command "node nameofapp.js"
+      - it will tell us hopefully, someone made a GET request to the url / with a status 200
+      - try doing this in postman also, with diff routes as well
+
+    - our app will have the following:
+      - dependancies
+      - setting up a database
+      - routes
