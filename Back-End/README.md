@@ -61,3 +61,17 @@
   - great libraries
   - JS, this is the most awesome reason.
   - High performance
+
+
+### What is NPM?
+
+  - On the front-end when we wanted to include bootstrap, or jQuery, we would include things would a script tag, but if we are writing node on the server side, we would require libraries through NPM.
+  - Code that somone else has written that we can include and add towards our project
+  - All the packages are centralized
+  -  NPM has a command line tool, all we have the to do is type in npm install "name of package" and as long as npm knows about it, it will automatically be installed
+
+### Why is it awesome
+
+  - centralized repo of almost 200k packages (module)
+  - easy to use
+  - framework, mongooes, morgon, ejs, body-parser etc...
