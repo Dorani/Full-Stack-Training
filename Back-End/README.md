@@ -54,3 +54,10 @@
       - and we can write js on front-end
 
 ### Why learn it?
+
+  - popular
+  - great community
+  - open source
+  - great libraries
+  - JS, this is the most awesome reason.
+  - High performance
