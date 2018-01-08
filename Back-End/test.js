@@ -29,5 +29,7 @@ app.post("/createdog", function(req, res){
   res.redirect("/dogs");
   });
 });
-
-//
+// all through a form
+// post request to slash create dogs
+// take the name and breed that we send in the request
+// then redirect to the dogs route with the rendered data
