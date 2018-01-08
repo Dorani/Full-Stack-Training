@@ -41,3 +41,16 @@
       - dependancies
       - setting up a database
       - routes
+
+
+### What is Node?
+
+  - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.
+
+  - In the past, all js was front-end code cause the only place it can run is the browser.
+      - That all changed when nodejs came along
+      - so now we can write js on the server side
+      - to interact with our database, write files, change tables, all the server side logic
+      - and we can write js on front-end
+
+### Why learn it?
