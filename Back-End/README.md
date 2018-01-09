@@ -92,3 +92,9 @@
       - inversion of control
           - it means when we call a library, you are in control
           - with a framework, it calls you
+
+### Why Express
+
+  - express is by far the most popular node web framework
+  - big community
+  - much lighter weight, unopinionated, so we need to understand more what is going on, less than rails.
