@@ -16,3 +16,10 @@ console.log(faker.commerce.price());
 
 //combine above 2 in a single license
 console.log(faker.commerce.productName() + " - $" + faker.commerce.price());
+
+
+console.log("Welcome to my Shop:");
+//repeat 10 times
+for (var i = 0; i < 10; i++){
+  console.log(faker.commerce.productName() + " - $" + faker.commerce.price());
+}
