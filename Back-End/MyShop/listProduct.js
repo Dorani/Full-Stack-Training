@@ -12,3 +12,7 @@ console.log(randomEmail);
     //productName and price methods
 
 console.log(faker.commerce.productName());
+console.log(faker.commerce.price());
+
+//combine above 2 in a single license
+console.log(faker.commerce.productName() + " - " + faker.commerce.price());
