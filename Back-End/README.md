@@ -75,3 +75,20 @@
   - centralized repo of almost 200k packages (module)
   - easy to use
   - framework, mongooes, morgon, ejs, body-parser etc...
+
+### Node Modules
+
+  - a directory that is automatically created for us whenever we install a package
+  - then we need to import it to our application with the require statement
+      - we need to require it, see next commit or line one in app.js
+      - run node app.js to see it generate a random cat everytime
+
+### What is a framework
+
+  - both lib and frameworks are external code, but lib is something you are in control of, one method, 2 methods we want to use etc..
+  - frameworks make decisions for us, and we fill in the blanks with the important parts. They take all the set up work and pre-packages it up so we dont need to do the ground work, rather than spending time working on basic stuff making it.
+
+  - the defining diff between and lib and a framework
+      - inversion of control
+          - it means when we call a library, you are in control
+          - with a framework, it calls you
