@@ -98,3 +98,17 @@
   - express is by far the most popular node web framework
   - big community
   - much lighter weight, unopinionated, so we need to understand more what is going on, less than rails.
+
+### Start
+
+  - npm install express
+  - require it, and initialize
+  - app.get takes 2 diff parameters, the url or path which is the route or home /
+  - the other is a callback function which takes 2 arguments, request and responses:
+      - req and res are objects, req contains all the information about the req that was made that triggered the routes
+      - same for response
+      - check app.js in FirstExpressApp
+### Server
+  - tell express to listen for request (start server)
+  - we need to write the code to tell it to listen to requests
+  - check app.js in FirstExpressApp

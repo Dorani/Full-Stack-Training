@@ -12,7 +12,7 @@ app.get("/", function(req, res){
   //the other is a callback function which takes 2 arguments, request and responses
   //req and res are objects, req contains all the information about the req that was made that triggered the routes
   //same for response
-  // then re respond with text
+  // then respond with text
 
 
 
