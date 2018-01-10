@@ -18,7 +18,9 @@ app.get("/", function(req, res){
 
 //-----------------------------------------------
 // when we go to "/bye" we should see "goodbye!"
-
+app.get("/bye", function(req, res){
+  res.send("goodbye!");
+});
 
 
 // when we go to "/dog" we should see "meow!"
