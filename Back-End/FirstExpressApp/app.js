@@ -25,6 +25,7 @@ app.get("/bye", function(req, res){
 
 // when we go to "/dog" we should see "meow!"
 app.get("/dog", function(req, res){
+  console.log("someone made a request to /DOG")
   res.send("meow!");
 });
 
