@@ -29,6 +29,15 @@ app.get("/dog", function(req, res){
   res.send("meow!");
 });
 
+
+//route paterns example
+//to see this msg we need to go to a route that matches the pattern
+app.get("/r/:subredditName", function(req,res){
+  res.send("welcome to a subreddit");
+});
+
+
+
 //if i go to a route that is not defined
 //i get routed here ( kinda like a page not found )
 //do not put this first, because it will override the rest
