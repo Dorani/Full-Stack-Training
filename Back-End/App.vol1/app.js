@@ -22,7 +22,7 @@ app.get("/speak/:animal", function(req,res){
   //sounds will be equal to sounds of animal
   var sound = sounds[animal];
 
-  res.send("the"+ animal + "says" + sound);
+  res.send("The "+ animal + " says '" + sound + "'");
 });
 
 
