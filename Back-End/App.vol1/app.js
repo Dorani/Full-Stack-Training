@@ -40,7 +40,9 @@ app.get("/repeat/:message/:times", function(req,res){
 //send back result string by going through the loop
 //hi/10 should get 10 his
 
-
+app.get("*", function(req,res){
+  res.send("Get it together");
+});
 
 //tell express to listen for request (start server)
 //we need to write the code to tell it to lsn to requests
