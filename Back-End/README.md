@@ -125,4 +125,7 @@
   - inside the folder where i want my app to live i type in "npm init"
       - series of questions that you may answer
       - all that data gets compiled and make our package.json files
-      
+      - so now when you install new packages
+          - npm install express --save
+          - you get a dependencies field with the package
+          
