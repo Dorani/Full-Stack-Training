@@ -33,7 +33,17 @@ app.get("/dog", function(req, res){
 //route paterns example
 //to see this msg we need to go to a route that matches the pattern
 app.get("/r/:subredditName", function(req,res){
+  //to see all the info from the requests
+  //we want req.paramas
+      //obj that contains all the route parameters and corresponding values
+  console.log(req.params);
   res.send("welcome to a subreddit");
+});
+
+//using reddit examples
+app.get("/r/:subredditName/comments/:id/:title/", function(){
+  console.log(req.params);
+  res.send("welcome to the comments page");
 });
 
 
