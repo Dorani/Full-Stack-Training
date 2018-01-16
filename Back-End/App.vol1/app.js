@@ -18,7 +18,7 @@ app.get("/speak/:animal", function(req,res){
     fish: "......"
   }
 
-  var animal = req.params.animal;
+  var animal = req.params.animal.toLowerCase();
   //sounds will be equal to sounds of animal
   var sound = sounds[animal];
 
