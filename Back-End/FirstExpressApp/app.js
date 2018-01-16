@@ -37,7 +37,8 @@ app.get("/r/:subredditName", function(req,res){
   //we want req.paramas
       //obj that contains all the route parameters and corresponding values
   console.log(req.params);
-  res.send("welcome to a subreddit");
+  var subreddit = req.params.subredditName;
+  res.send("welcome to the" + subreddit.toUpperCase() + " subreddit");
 });
 
 //using reddit examples
