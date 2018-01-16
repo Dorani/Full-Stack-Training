@@ -112,3 +112,12 @@
   - tell express to listen for request (start server)
   - we need to write the code to tell it to listen to requests
   - check app.js in FirstExpressApp
+
+
+### Package.json
+
+  - javascript object notation, data type, a way of formating text in a file to represent structure
+  - a file that contains all the meta-data about this app Express
+  - name author github license homepage and most importantly the dependancies
+  - this file collects them All
+  
