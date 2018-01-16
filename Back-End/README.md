@@ -118,6 +118,7 @@
 
   - javascript object notation, data type, a way of formating text in a file to represent structure
   - a file that contains all the meta-data about this app Express
-  - name author github license homepage and most importantly the dependancies
+  - name author github license homepage and most importantly the dependancies: list of packages and versions needed in order for app to run
   - this file collects them All
-  
+  - when we are sharing code, and they depend on 100's of packages, we can just put them in the package.json.
+  - (-- save) will take the package name and version and auto save it into our package.json file
