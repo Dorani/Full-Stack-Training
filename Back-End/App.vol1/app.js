@@ -25,11 +25,19 @@ app.get("/speak/:animal", function(req,res){
   res.send("The "+ animal + " says '" + sound + "'");
 });
 
+//repeat route
+
+app.get("/repeat/:message/:times", function(req,res){
+  var message = req.params.message;
+  var times = req.params.times;
+  res.send("Message" + message + " Times" + times);
+})
+
+
 
 
 //tell express to listen for request (start server)
 //we need to write the code to tell it to lsn to requests
-
 app.listen(3000, function(){
   console.log("Serving demo app on port 3000");
 });
