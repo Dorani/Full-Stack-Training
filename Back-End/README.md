@@ -122,3 +122,7 @@
   - this file collects them All
   - when we are sharing code, and they depend on 100's of packages, we can just put them in the package.json.
   - (-- save) will take the package name and version and auto save it into our package.json file
+  - inside the folder where i want my app to live i type in "npm init"
+      - series of questions that you may answer
+      - all that data gets compiled and make our package.json files
+      
