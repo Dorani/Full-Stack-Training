@@ -128,4 +128,13 @@
       - so now when you install new packages
           - npm install express --save
           - you get a dependencies field with the package
-          
+
+### Routing
+
+  - order of routes matters
+    - the first route that matches a given request
+    - then we are done
+
+  - patterns to route are optimal
+  - we make use of route parameters, or route paths
+  - ":"" tells express not to match character, but to lsn for a patterns
