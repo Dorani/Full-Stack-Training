@@ -29,6 +29,16 @@ app.get("/dog", function(req, res){
   res.send("meow!");
 });
 
+//if i go to a route that is not defined
+//i get routed here ( kinda like a page not found )
+//do not put this first, because it will override the rest
+app.get("*", function(req, res){
+  res.send("you are a star!!");
+});
+
+
+
+
 //tell express to listen for request (start server)
 //we need to write the code to tell it to lsn to requests
 
