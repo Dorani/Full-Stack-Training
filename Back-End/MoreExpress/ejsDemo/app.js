@@ -12,7 +12,7 @@ app.get('/', function(req,res){
 
 app.get("/fallinlovewith/:thing", function(req,res){
   var thing = req.params.thing;
-  res.send("you fell in love with" + thing);
+  res.render("love.ejs");
 });
 
 
