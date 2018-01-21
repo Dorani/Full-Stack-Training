@@ -4,7 +4,10 @@ var app = express();
 //equal express executed as a function
 
 app.get('/', function(req,res){
-  res.send("welcome to the home page");
+  //render a file
+  //method called render, lives on the response obj
+  //then give it a name of a file
+  res.render("home.ejs");
 });
 
 
