@@ -139,8 +139,9 @@
   - we make use of route parameters, or route paths
   - ":"" tells express not to match character, but to lsn for a patterns
 
-### EJS   
+### EJS
 
+  - Embeded javascript, lets us embed js code inside of html
   - Use the render method and have to look for an ejs file in your directory, and when it finds it, take the contents and send it back in the response.
   - Make sure, in order to render an ejs file, you need to npm install ejs --save
   - Then run your app and refresh
