@@ -10,6 +10,11 @@ app.get('/', function(req,res){
   res.render("home.ejs");
 });
 
+app.get("/fallinlovewith/:thing", function(req,res){
+  var thing = req.params.thing;
+  res.send("you fell in love with" + thing);
+});
+
 
 
 
