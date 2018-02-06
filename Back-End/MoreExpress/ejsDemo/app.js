@@ -21,11 +21,11 @@ app.get("/fallinlovewith/:thing", function(req,res){
 app.get("/posts", function(req, res){
   var posts = [
     {title: "Post 1", author: "Susy"},
-     title: "Post 2", author: "Seif"},
-     title: "Post 2", author: "Sam"}
+    {title: "Post 2", author: "Seif"},
+    {title: "Post 2", author: "Sam"}
   ];
-  res.render("posts.ejs", {posts: posts})//pass in our data, the 2nd refers to the name of our var and the other will be in the ejs template
-})
+  res.render("posts.ejs", {posts: posts});//pass in our data, the 2nd refers to the name of our var and the other will be in the ejs template
+});
 
 
 
