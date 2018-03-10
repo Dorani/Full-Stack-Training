@@ -1,15 +1,16 @@
 var express = require("express");
 var app = express();
-
-app.use(express.static("public"));//tells express to serve the contents of the public directory
 //two steps usually, require 1st, then initialize var app make it
 //equal express executed as a function
+
+app.use(express.static("public"));//tells express to serve the contents of the public directory
+app.set("view engine", "ejs");
 
 app.get('/', function(req,res){
   //render a file
   //method called render, lives on the response obj
   //then give it a name of a file
-  res.render("home.ejs");
+  res.render("home");
 });
 
 app.get("/fallinlovewith/:thing", function(req,res){
@@ -17,7 +18,7 @@ app.get("/fallinlovewith/:thing", function(req,res){
   //thingVar passed through as an object
   //mulitple pieces of data
   //take the value of thing
-  res.render("love.ejs", {thingVar: thing});
+  res.render("love", {thingVar: thing});
 });
 
 app.get("/posts", function(req, res){
@@ -26,7 +27,7 @@ app.get("/posts", function(req, res){
     {title: "The Times", author: "Seif"},
     {title: "The New Republic", author: "Sam"}
   ];
-  res.render("posts.ejs", {posts: posts});//pass in our data, the 2nd refers to the name of our var and the other will be in the ejs template
+  res.render("posts", {posts: posts});//pass in our data, the 2nd refers to the name of our var and the other will be in the ejs template
 });
 
 
