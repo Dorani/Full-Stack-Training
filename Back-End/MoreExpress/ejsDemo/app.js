@@ -1,5 +1,7 @@
 var express = require("express");
 var app = express();
+
+app.use(express.static("public"));//tells express to serve the contents of the public directory
 //two steps usually, require 1st, then initialize var app make it
 //equal express executed as a function
 
