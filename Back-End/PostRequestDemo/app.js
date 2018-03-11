@@ -12,6 +12,11 @@ app.get("/friends", function(req,res){
   res.render("friends", {friends: friends});//then we need to pass that array of friends into our friends template, where we then loop through and display each friend as a li
 });//a property name to look up in the views, and data passing in is also friends
 
+app.post("/addfriend", function(req,res){
+  res.send("you have reached the post route");
+});
+
+
 
 //launch server
 app.listen(8000, function(){
