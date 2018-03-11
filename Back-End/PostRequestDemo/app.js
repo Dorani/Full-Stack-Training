@@ -7,6 +7,9 @@ app.get("/", function(req,res){
   res.render("home");
 });
 
+app.get("/friends", function(req,res){
+  res.render("friends");
+});
 
 
 //launch server
