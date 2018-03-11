@@ -13,6 +13,7 @@ app.get("/friends", function(req,res){
 });//a property name to look up in the views, and data passing in is also friends
 
 app.post("/addfriend", function(req,res){
+  console.log(req.body);//obj contains all the data from req body, all form data goes into there, 
   res.send("you have reached the post route");
 });
 
