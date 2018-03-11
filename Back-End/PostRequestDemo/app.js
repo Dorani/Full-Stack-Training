@@ -8,7 +8,7 @@ app.get("/", function(req,res){
 });
 
 app.get("/friends", function(req,res){
-  var friends = ["tony", "seif", "pierre", "emma", "lilly"];//create an array of friends names
+  var friends = ["tony", "seif", "pierre", "emma", "lilly", "sam"];//create an array of friends names
   res.render("friends", {friends: friends});//then we need to pass that array of friends into our friends template, where we then loop through and display each friend as a li
 });//a property name to look up in the views, and data passing in is also friends
 
