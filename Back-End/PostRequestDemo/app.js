@@ -1,5 +1,8 @@
 var express = require("express");
 var app = express();
+var bodyParser = require("body-parser");
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.set("view engine", "ejs");
 
@@ -13,7 +16,7 @@ app.get("/friends", function(req,res){
 });//a property name to look up in the views, and data passing in is also friends
 
 app.post("/addfriend", function(req,res){
-  console.log(req.body);//obj contains all the data from req body, all form data goes into there, 
+  console.log(req.body);//obj contains all the data from req body, all form data goes into there,
   res.send("you have reached the post route");
 });
 
