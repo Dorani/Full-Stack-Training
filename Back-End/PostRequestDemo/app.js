@@ -6,17 +6,20 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.set("view engine", "ejs");
 
+var friends = ["tony", "seif", "pierre", "emma", "lilly", "sam"];//create an array of friends names
+
+
 app.get("/", function(req,res){
   res.render("home");
 });
 
 app.get("/friends", function(req,res){
-  var friends = ["tony", "seif", "pierre", "emma", "lilly", "sam"];//create an array of friends names
   res.render("friends", {friends: friends});//then we need to pass that array of friends into our friends template, where we then loop through and display each friend as a li
 });//a property name to look up in the views, and data passing in is also friends
 
 app.post("/addfriend", function(req,res){
-  console.log(req.body.newfriend);//obj contains all the data from req body, all form data goes into there,
+  var newFriend = req.body.newfriend;
+  //console.log(req.body.newfriend);//obj contains all the data from req body, all form data goes into there,
   res.send("you have reached the post route");
 });
 
