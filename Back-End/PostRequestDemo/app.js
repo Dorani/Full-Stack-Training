@@ -21,7 +21,7 @@ app.post("/addfriend", function(req,res){
   var newFriend = req.body.newfriend;
   friends.push(newFriend);
   //console.log(req.body.newfriend);//obj contains all the data from req body, all form data goes into there,
-  res.send("you have reached the post route");
+  res.redirect("/friends");//redirect to this route
 });
 
 
