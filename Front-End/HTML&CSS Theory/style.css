@@ -1,0 +1,15 @@
+p {
+  width: 200px;
+  height: 300px;
+  border: 2px solid blue;
+  padding-left: 40px;
+  margin: 20px 40px 500px 100px;
+}
+
+#facts{
+  width: 200px;
+  height: 300px;
+  border: 2px solid blue;
+  padding-left: 40px;
+  margin: 20px 40px 500px 100px;
+}
