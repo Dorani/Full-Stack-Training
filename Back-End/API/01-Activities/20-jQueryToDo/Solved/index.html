@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Todo</title>
+
+    <style>
+
+      body {
+        background: cornflowerblue;
+        color:yellow;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      input {
+        width:50%;
+        margin:10% 2%;
+        height:32px;
+        font-size: 24px;
+      }
+
+      button { height: 32px; }
+
+      #tasks {
+        background-color: antiquewhite;
+        width:60%;
+        height:400px;
+        overflow: auto;
+        margin: 0 auto;
+        color:black;
+      }
+
+      #tasks div {
+        border:1px solid grey;
+        margin: 2%;
+        font-size: 32px;
+        padding:5%;
+        box-sizing: border-box;
+      }
+
+      #delete {
+        cursor:pointer;
+        float:right;
+        color:red;
+        font-weight: bold;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Todo List</h1>
+    <input id="new-task" type="text">
+    <button id="add">Add!</button>
+    <div id="tasks"></div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+
+  </body>
+
+</html>

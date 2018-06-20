@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: silver;
+}
+
+nav {
+  height: 75px;
+  padding: 0 10%;
+  background-color: cornflowerblue;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 60px;
+}
+
+#menu {
+  display: inline-block;
+  float: right;
+}
+
+ul {
+  text-align: right;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 26px 30px;
+  color: white;
+  text-align: right;
+  background-color: maroon;
+}
+
+#page-wrapper {
+  width: 1024px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+
+#image-div {
+  width: 1024px;
+  height: 200px;
+  background-image: url("https://www.placecage.com/c/1024/200");
+}
+
+#left,
+#center,
+#right {
+  display: inline-block;
+  width: 30%;
+  margin: 1.5%;
+  text-align: justify;
+  vertical-align: top;
+}
+
+/********************* ADD YOUR MEDIA QUERIES BELOW THIS LINE ***********************/
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    display: block;
+    text-align: center;
+  }
+
+  #menu {
+    display: block;
+    float: none;
+    background-color: maroon;
+  }
+
+  nav {
+    height: auto;
+    padding: 0;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  li {
+    padding: 10px;
+    margin: 0 5%;
+  }
+
+  #page-wrapper {
+    width: 100%;
+  }
+
+  #left,
+  #center,
+  #right {
+    display: block;
+    width: 90%;
+    margin: 2% auto;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #left,
+  #center,
+  #right {
+    height: 200px;
+    margin: 5% auto;
+    overflow: auto;
+  }
+
+  #image-div {
+    background-image: url("http://www.stevensegallery.com/768/200");
+  }
+}

@@ -1,0 +1,65 @@
+<!-- Timeout Example -->
+<!-- Go to the Last Script Tag -->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Timeouts</title>
+
+  </head>
+
+  <body>
+
+    <h1>Timeouts!</h1>
+
+    <button id="window-cancel">Window Alert Cancel</button>
+
+    <br>
+    <br>
+
+    <button id="start">Button Timeout Start</button>
+    <button id="cancel">Button Timeout Cancel</button>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript">
+      //  Variable that will hold the button alert's timeout when it is clicked.
+      var delayButtonAlert;
+
+      //  Timeouts in JavaScript
+      //  Set our window alert to run one second after the function's called.
+      var windowTimeout = setTimeout(function() {
+        alert("Alert #1");
+      }, 1000);
+
+      //  Start on click.
+      $("#start").on("click", function() {
+        //  Set the button alert's timeout to run three seconds after the function's called.
+        delayButtonAlert = setTimeout(function() {
+          alert("Alert #2");
+        }, 3000);
+      });
+
+      //  Cancel on click.
+      $("#cancel").on("click", function() {
+        // Clear the button alert's timeout.
+        clearTimeout(delayButtonAlert);
+      });
+
+      //  Cancel window alert on click.
+      $("#window-cancel").on("click", function() {
+        //  Clear the timeout, and stop the window alert.
+        clearTimeout(windowTimeout);
+      });       
+
+    </script>
+
+  </body>
+
+</html>

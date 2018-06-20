@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>What is this?</title>
+
+  </head>
+
+  <body>
+
+    <button id="button">CLICK ME!</button>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script type="text/javascript">
+
+      var outside = function() {
+
+        //  1. What will be console logged out? What is *this* in this case?
+        console.log(this);
+
+      };
+
+      //  Answer: It will console log the window.
+      outside();
+
+      $("#button").on("click", function() {
+
+        //  2. What will be console logged out? What is *this* in this case?
+        console.log(this);
+        //  Answer: It will console log the button
+      });
+
+      var bob = {
+        firstName: "Bob",
+        lastName: "Smith",
+        whoIsBob: function() {
+          console.log(this);
+        },
+        fullName: function() {
+
+        // 3. Put something inside of here so that this works
+          console.log(this.firstName + " " + this.lastName);
+        }
+      };
+
+      // 4. What will the console log output if this function gets called?
+      // It will console bob, the object.
+      bob.whoIsBob();
+
+      //  5. Fill in the code inside the fullName function
+      //     above so that the below code console.logs out
+      //     Bob's full name using the firstName and lastName properties.
+      //     it will console "Bob Smith" to the screen
+      bob.fullName();
+
+      // 6. Fill in the code below to make the "theChosenOne" function, log "Keanu Reeves."
+      // Put code here
+      var firstName = "Keanu";
+
+      // and put code here.
+      var lastName = "Reeves";
+
+      // window.firstName is Keanu
+      // window.lastName is Reeves
+      // Don't touch any of the code below!!
+      var theChosenOne = function() {
+
+        // *this* is the window here
+        console.log(this.firstName + " " + this.lastName);
+      };
+
+      theChosenOne();
+
+    </script>
+
+  </body>
+
+</html>
+
+
+
+

@@ -1,0 +1,45 @@
+<!-- Context.html -->
+<!-- How Timeout's function with this -->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>Context</title>
+
+  </head>
+
+  <body>
+
+    <!-- Script -->
+    <script type="text/javascript">
+
+      // We define a person, and include a method that logs his name along with a greeting.
+      var person = {
+        name: "Jeff",
+        sayHi: function() {
+          console.log("Hi, I'm " + this.name);
+          console.log(this);
+        }
+      };
+
+      // When we run it normally, it works like we intended.
+      person.sayHi();
+
+      // Hi, I'm Jeff
+      // But if we include it in a timeout
+      setTimeout(person.sayHi, 50);
+
+      // We get the following:
+      // Hi, I'm
+      // Window Object
+
+    </script>
+
+  </body>
+
+</html>

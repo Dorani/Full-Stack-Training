@@ -1,0 +1,71 @@
+<!-- Lottery Generator HTML -->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Lottery Generator</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Added a link to Font Awesome CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="jumbotron">
+
+      <h1 class="text-center">Generate Lottery Numbers!</h1>
+
+      <div class="text-center">
+
+        <!-- Here we have our button with id random-button -->
+        <button class="btn btn-primary btn-lg" id="random-button"><h1><span class="fa fa-question"></span></h1></button>
+
+      </div>
+
+    </div>
+
+    <!-- Here we have the div where our number will go called random-number -->
+    <h1 class="text-center" id="random-number"></h1>
+
+    <!-- Script -->
+    <script type="text/javascript">
+
+    // Lottery Generator JavaScript
+    // =====================================
+
+    // jQuery Ready Function waits for the document to complete loading before initiating JavaScript
+    $(document).ready(function() {
+
+      // When random-button is clicked...
+      $("#random-button").on("click", function() {
+
+        // ...create a string which will hold the lottery number.
+        var lottoNumber = "";
+
+        // Then create a loop that generates 9 separate numbers.
+        for (var i = 0; i < 9; i++) {
+          var random = Math.floor(Math.random() * 9) + 1;
+
+          // Add to the lottery number.
+          lottoNumber = random + lottoNumber;
+        }
+
+        // Then prepend the lotto number to the top of our random-number div.
+        $("#random-number").prepend("<br><hr>" + lottoNumber);
+      });
+    });
+
+    </script>
+
+  </body>
+
+</html>

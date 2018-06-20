@@ -1,0 +1,39 @@
+body {
+  font-size: 24px;
+  background-color: lightgrey;
+}
+
+h1 {
+  padding: 5%;
+  color: white;
+  text-align: center;
+  background-color: navy;
+}
+
+#left {
+  float: left;
+  width: 75%;
+  box-sizing: border-box;
+  padding: 2%;
+  background-color: cornflowerblue;
+}
+
+#right {
+  float: right;
+  width: 25%;
+  height: 653px;
+  box-sizing: border-box;
+  padding: 2%;
+  overflow: auto;
+  background-color: #b20;
+}
+
+#helper {
+  clear: both;
+}
+
+#text-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
