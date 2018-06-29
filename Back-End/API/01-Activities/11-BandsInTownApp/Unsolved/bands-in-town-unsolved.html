@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bands In Town</title>
+</head>
+
+<body>
+
+  <!-- Artist Select Box -->
+  <form id="artist-form">
+
+    <!-- Label for Text Box -->
+    <label for="artist-input">Choose Your Artist</label>
+
+    <!-- Text Input Box -->
+    <input type="text" id="artist-input"><br>
+
+    <!-- Submit Button -->
+    <input id="select-artist" type="submit" value="GO!">
+  </form>
+
+  <!-- Artist Information -->
+  <div id="artist-div"></div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  function searchBandsInTown(artist) {
+    // Add code to query the bands in town api searching for the artist received as an argument to this function
+    // Using jQuery, append the following to the #artist-div :
+    // The artist's name
+    // The artists thumbnail image
+    // The number of fans tracking this artist
+    // The number of upcoming events for this artist
+    // A link to the bandsintown url for this artist
+    // Note: Append actual HTML elements, not just text
+  }
+
+  // Event handler for user clicking the select-artist button
+  $("#select-artist").on("click", function(event) {
+    // Preventing the button from trying to submit the form
+    event.preventDefault();
+    // Storing the artist name
+    var artist = $("#artist-input").val().trim();
+
+    // Running the searchBandsInTown function (passing in the artist as an argument)
+    searchBandsInTown(artist);
+  });
+</script>
+
+</html>
