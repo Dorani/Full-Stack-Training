@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1>Event Look Up</h1>
+
+<form>
+	<input type="text">
+
+	<button>add item</button>
+</form>
+
+<div id="stuff">
+
+</div>
+
+<iframe id ="map" src="" frameborder="0"></iframe>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+var city = '';
+
+//  On button click, take input and add a google maps search of city onto web page
+
+$('button').on('click', function(){
+
+// Sets URL to the defined parameters
+	event.preventDefault();
+	city = $('input').val();
+	var url = 'https://www.google.com/maps/embed/v1/search?key=AIzaSyAXGParj76SrKimNk9-iiALLFLiQ0StCB4&q=dallas' + city;
+	$('iframe').attr('src', url + city)
+
+});
+
+
+
+</script>
+</body>
+</html>
