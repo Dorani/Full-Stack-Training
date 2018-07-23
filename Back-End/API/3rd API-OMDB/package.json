@@ -1,0 +1,16 @@
+{
+  "name": "3rd-api-omdb",
+  "version": "1.0.0",
+  "description": "search movies using OMDB api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seif",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "request": "^2.87.0"
+  }
+}
