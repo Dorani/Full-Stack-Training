@@ -5,6 +5,13 @@ var request = require("request");
 app.set("view engine", "ejs");
 
 
+
+
+app.get("/", function(req,res){
+  res.render("search");
+});
+
+
 //(TAKING OUR REQUEST CODE AND PUTING IT IN OUR APP:)
 //created routes called results
 //made an api request to omdbapi
