@@ -1,0 +1,14 @@
+{
+  "name": "2nd-api-request",
+  "version": "1.0.0",
+  "description": "weather api request",
+  "main": "2nd_request.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "seif",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.87.0"
+  }
+}
