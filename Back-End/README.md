@@ -153,3 +153,5 @@
           - wtvr goes inside is treated as js code
           - wtvr is returned is printed to html
           - to pass data through we pass in obj with key value pairs we have access to the properties of the obj, which is equal to "thing" which changes everytime
+
+### Databases
