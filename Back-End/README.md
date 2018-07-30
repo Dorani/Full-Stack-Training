@@ -155,3 +155,31 @@
           - to pass data through we pass in obj with key value pairs we have access to the properties of the obj, which is equal to "thing" which changes everytime
 
 ### Databases
+
+- What is a database?
+    - A collection of information/data
+    - Has an interface, ie we can write code to interact with it
+
+- SQL(Relational) vs NoSQL(non-Relational) Databases
+
+- SQL has been around the longest:
+    - Tabular and flat:
+    - Define what a user looks like, usually - an ID, name, age, city
+    - Every single user that we add, follows this pattern but adding instances of a user to the table
+    - Another separete table can be created called comments, that has an ID and text
+    - If I want there to be a relationship where a user has a commented associated with some comments
+        - The only way to express this relationship is through join table
+        - So we would have to somehow merge both tables with a common denominator "ID".
+        - Joins a user ID with comment ID
+
+    - Everything is Tabular and NOT very flexible at all, you need to follow a pattern from the start and stick to it.
+
+
+  - NoSQL we don't have to define patterns ahead of time, no table, no tabular structure and things can be nested:
+  - Binary JavaScript object notation
+      - Bunch of js notations in the form of objects!
+      - Looks like JS
+      - Key value pairs and the important part, is comments can be nested in the data and adding objects and push into that data structure
+      - Flexible structure
+      - You can define properties, and add users dynamically, and give those users specifics attributes.
+      - Big difference between both databases!
