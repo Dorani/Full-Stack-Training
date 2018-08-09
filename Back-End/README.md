@@ -187,10 +187,16 @@
 ## Intro to MongoDB
 
   - What is MongoDB?
+
       - MongoDB is an open source database that uses a document-oriented data model.
 
       - MongoDB is one of several database types to arise in the mid-2000s under the NoSQL banner. Instead of using tables and rows as in relational databases, MongoDB is built on an architecture of collections and documents. Documents comprise sets of key-value pairs and are the basic unit of data in MongoDB. Collections contain sets of documents and function as the equivalent of relational database tables.
 
-      
+
   - Why are we using it?
+
+      - Lots of companies use it!
+      - Most popular database now with Node and Express and the MEAN/MERN stack!
+      - Great tools inside of an express app at our disposal
+
   - Brew install it after updating brew!
