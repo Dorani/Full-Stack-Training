@@ -215,6 +215,12 @@
     - update
     - remove
 
+## To begin
+
+- In your terminal after having successfully installed MongoDB run the following commands in order in 2 separate tabs:
+    - mongod: starts the demon, we need it running to use mongo at all
+    - mongo : opens the shell where we can run our mongo commands!
+
 ## One's we will be using and purpose
 - help:
   - give us a list of basic features of mongo
@@ -240,3 +246,15 @@
 - Sometimes we want to find a particular instances of a dog
     - db.dogs.find({name:"rusty"})
     - return a single dog with name rusty
+
+
+- Update: allows us to make updates to the databases
+    - db.dogs.update({name:"rusty"}, {$set: {name: "bambam", isCute: true}})
+    - So what we have done above is the follow:
+        - updated the dogs where name is rusty, then we use $ set and provide an object to set, and it will preserve breed as pom and won't delete it
+        - and we also added a new property at the same time!
+
+- Delete or Removing: allows us to completely remove or destroy a dog from the dogs db
+    - db.dogs.remove({breed: "pom"})
+    - removing all dogs where the breed is pom
+    - returns a WriteResult({nRemoved: 1})
