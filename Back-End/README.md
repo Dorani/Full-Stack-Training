@@ -200,3 +200,18 @@
       - Great tools inside of an express app at our disposal
 
   - Brew install it after updating brew!
+  - Go to MongoDB.org
+
+
+## Our First Mongo Commands
+
+    - mongod
+    - mongo
+    - help: give us a list of basic features of mongo
+    - show dbs: show all databases
+    - use: go into dbs
+    - insert: db.dogs.insert({name: "rusty", breed:"pom"}) = db is the current database, dogs is the current "collection", insert is the command that allows us to inject data for this case its an object with 2 properties
+        - we should get back a WriteResult({nInserted:1})
+    - find
+    - update
+    - remove
