@@ -260,3 +260,19 @@
     - db.dogs.remove({breed: "pom"})
     - removing all dogs where the breed is pom
     - returns a WriteResult({nRemoved: 1})
+
+
+
+## Mongoose
+
+- What is Mongoose?
+
+    - Elegant mongodb object modeling for node.js
+
+    - Mongoose provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
+
+    - Basically, mongoose is a tool - a package we download and install using NPM that helps us interact with mongoDB using our JS file. Just like jQuery makes it easy to interact with the DOM, Mongoose makes it easy and cleaner for us to interact with a mongo database
+
+- Why are we using it?
+
+- Interact with a Mongo Database using Mongoose
