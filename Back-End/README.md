@@ -218,8 +218,10 @@
 ## To begin
 
 - In your terminal after having successfully installed MongoDB run the following commands in order in 2 separate tabs:
-    - mongod: starts the demon, we need it running to use mongo at all
-    - mongo : opens the shell where we can run our mongo commands!
+    - mongod: the primary daemon process for the MongoDB system. It handles data requests, manages data access, and performs background management operations. This document provides a complete overview of all command line options for
+    - mongo : The mongo shell is an interactive JavaScript interface to MongoDB. You can use the mongo shell to query and update data as well as perform administrative operations.
+
+    - The mongo shell is a component of the MongoDB distributions. Once you have installed and have started MongoDB, connect the mongo shell to your running MongoDB instance.
 
 ## One's we will be using and purpose
 - help:
