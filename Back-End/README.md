@@ -221,7 +221,22 @@
 - show dbs:
   - show all databases
 - use:
-  -go into dbs
+  - go into dbs and use it, if it exists, but if it doesn't it will create an empty database, it will wait for us to add in collections
+
 - insert:
+  - mongo is non relational so its flexible, so we can have a dog with one property, and another with 3 so on and so forth
+  - in order to add to the database:
   - db.dogs.insert({name: "rusty", breed:"pom"}) = db is the current database, dogs is the current "collection", insert is the command that allows us to inject data for this case its an object with 2 properties
       - we should get back a WriteResult({nInserted:1})
+      - to prove that it was created:
+- Show collections:
+  - shows now I have a dogs collection
+
+- Find: will give me all the dogs - everything in that collection:
+    - db.dogs.find()
+    - it will return data + a unique obj id assigned by mongo.
+    - we will be using it to refer to specific items
+
+- Sometimes we want to find a particular instances of a dog
+    - db.dogs.find({name:"rusty"})
+    - return a single dog with name rusty
