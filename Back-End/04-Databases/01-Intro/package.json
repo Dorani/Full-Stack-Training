@@ -2,7 +2,7 @@
   "name": "01-intro",
   "version": "1.0.0",
   "description": "1st mongoose app",
-  "main": "cats.js",
+  "main": "cat.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
