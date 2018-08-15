@@ -53,7 +53,8 @@ var Cat = mongoose.model("Cat", catSchema);
 // });
 
 //another way:
-//make a new one and save to db
+//make a new one and save to db:
+
 Cat.create({
   name: "snow white",
   age: 15,
