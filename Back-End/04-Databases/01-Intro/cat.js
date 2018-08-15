@@ -16,12 +16,28 @@ mongoose.connect('mongodb://127.0.0.1:27017/cat_app', options).then(function(){
 //tells mongoose - the js side of things that i want to add
 //cats to a database
 
-//so we dont define a table just define a pattern for our table
+//so we dont define a table just define a "pattern" for our table
+//this pattern has a set of attributes
 var catSchema = new mongoose.Schema({
   name: String,
   age: Number,
   temperment: String
 });
+//we took the pattern cat schema, and compiled it into a modelel
+//save it into a var Cat
+var Cat = mongose.model("Cat", catSchema);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
