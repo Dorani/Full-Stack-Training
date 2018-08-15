@@ -267,12 +267,20 @@
 
 - What is Mongoose?
 
+    - ODM object data mapper, which means another way of writing js inside of of our js files and that js code will interact with our DB
+
+    - It's a JS layer on top of mongo db that has a set of special methods to make our life easy
+
+    - we install it and require it, then connect and the cat app db was created for us
+
+    - we define a schema, a plan for what a cat looks like with a set of properties
+
+    - we take the cat schema and compile it into a model which returns an object that has a bunch of methods(crud)
+
     - Elegant mongodb object modeling for node.js
 
     - Mongoose provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
 
     - Basically, mongoose is a tool - a package we download and install using NPM that helps us interact with mongoDB using our JS file. Just like jQuery makes it easy to interact with the DOM, Mongoose makes it easy and cleaner for us to interact with a mongo database
-
-- Why are we using it?
 
 - Interact with a Mongo Database using Mongoose
