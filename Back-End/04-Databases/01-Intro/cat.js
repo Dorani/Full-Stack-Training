@@ -25,7 +25,9 @@ var catSchema = new mongoose.Schema({
 });
 //we took the pattern cat schema, and compiled it into a modele
 //save it into a var Cat
-var Cat = mongose.model("Cat", catSchema);//name of our singular version of our model which is cat and it will make a collection like db_cats
+var Cat = mongoose.model("Cat", catSchema);
+//name of our singular version of our model
+//which is cat and it will make a collection like db_cats
 //now we can do everything off the Cat object
 //which is really just a pattern that has methods:
     //Cat.find - Cat.
