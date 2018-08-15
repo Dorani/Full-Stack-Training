@@ -52,7 +52,11 @@ george.save(function(err, cat){
   }
 });
 
-
+//open the terminal and type mongo
+  //show dbs
+  //use cat_app
+  //show collections
+  //db.cats.find() 
 
 
 //retrieve all cats from DB and console.log each One
