@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost:27017/cat.js', { useNewUrlParser: true });//url + default port number + name of DB
 //if I do not have a cat app db, it will run it, see that and make One
 
-const options = {
+var options = {
  useNewUrlParser: true
  };
 
@@ -13,7 +13,15 @@ mongoose.connect('mongodb://127.0.0.1:27017/cat_app', options).then(function(){
   console.log("we live baby!");
 });
 
+//tells mongoose - the js side of things that i want to add
+//cats to a database
 
+//so we dont define a table just define a pattern for our table
+var catSchema = new mongoose.Schema({
+  name: String,
+  age: Number,
+  temperment: String
+});
 
 
 
