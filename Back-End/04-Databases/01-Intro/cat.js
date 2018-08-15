@@ -32,17 +32,25 @@ var Cat = mongose.model("Cat", catSchema);//name of our singular version of our 
 
 
 
+          //adding a new cat to DB
+
+
+var george = new Cat({
+  name: "George",
+  age: 11,
+  temperment: "Grouchy"
+});
+//added to db
+george.save(function(err, cat){
+  if (err){
+    console.log("something went wrong")
+  } else {
+    console.log("we just saved a cat to the DB");
+    console.log(cat);
+  }
+});
 
 
 
-
-
-
-
-
-
-
-
-//adding a new cat to DB
 
 //retrieve all cats from DB and console.log each One
