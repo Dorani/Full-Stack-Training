@@ -82,8 +82,7 @@ Cat.create({
 
 
 
-          //retrieve all cats from DB and console.log each One
-
+//retrieve all cats from DB and console.log each One
 Cat.find({}, function(err, cats){
   if(err){
     console.log("oh no!");
