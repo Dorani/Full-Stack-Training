@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Projects from './components/projects'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Welcome to Project Management</h1>
+        <Projects test="hello Seif"/>
       </div>
     );
   }
