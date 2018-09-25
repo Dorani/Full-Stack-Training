@@ -4,7 +4,8 @@ import './App.css';
 
 class App extends Component {
   //all our data goes into state
-  construtor(){
+  constructor(){
+    super();
     this.state = {
       projects: [
         {
@@ -28,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Projects test="hello Seif"/>
+        <Projects projects = {this.state.projects}/>
       </div>
     );
   }
