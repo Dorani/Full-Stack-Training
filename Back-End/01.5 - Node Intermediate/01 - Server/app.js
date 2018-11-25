@@ -1,4 +1,4 @@
-//require module http
+//require the http module
 const http = require('http');
 
 //event driven architecture
