@@ -27,10 +27,10 @@ const server = http.createServer((req, res) => {
     req.on('end', () => {
       const parsedBody = Buffer.concat(body).toString();
       console.log(parsedBody);
+      const message = parsedBody.split('=')[1];
+      //create a new file, dummy data
+      fs.writeFileSync('message.txt', message);
     })
-    //create a new file, dummy data
-    fs.writeFileSync('message.txt', 'testing testing...');
-
     //allows us to write meta, pass status code '302' which stands for redirect
     //pass js obj with headers {}
     res.statusCode = 302;
