@@ -9,6 +9,8 @@ const server = http.createServer((req, res) => {
     res.write('<html>');
     res.write('<head>Welcome</head>');
     res.write('<body><form action="/message" method="POST"><input type="text"><button type ="submit">Send</button></form></body>');
+
+    return res.end();
   }
 
   console.log(req);
