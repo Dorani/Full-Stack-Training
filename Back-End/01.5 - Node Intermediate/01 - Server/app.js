@@ -4,6 +4,7 @@ const http = require('http');
 //event driven architecture
 const server = http.createServer((req, res) => {
   console.log(req);
+  res.write('<h1>hello from my nodejs server</h1>');
 });
 
 
