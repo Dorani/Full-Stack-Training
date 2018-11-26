@@ -1,26 +1,39 @@
 //require the http module
 const http = require('http');
+const fs = require('fs');
 
 //event driven architecture
 const server = http.createServer((req, res) => {
   const url = req.url;
+  const method = req.method;
 
   if(url === "/"){
     res.write('<html>');
     res.write('<head>Welcome</head>');
-    res.write('<body><form action="/message" method="POST"><input type="text"><button type ="submit">Send</button></form></body>');
+    res.write('<body><form action="/message" method="POST"><input type="text" name="message> "<button type ="submit">Send</button></form></body>');
+    res.write('</html>')
 
     return res.end();
   }
 
-  if(url === "/message" && method = "POST"){
-    //redirect back to "/"
-    //create a new file
-    //store info submitted
+  if(url === '/message' && method === 'POST'){
+    //create a new file, dummy data
+    fs.writeFileSync('message.txt', 'testing testing...');
+
+    //allows us to write meta, pass status code '302' which stands for redirect
+    //pass js obj with headers {}
+    res.statusCode = 302;
+    res.setHeader('Location','/')
+    return res.end();
   }
 
-  console.log(req);
-  res.write('<h1>hello from my nodejs server</h1>');
+  res.setHeader('Content-Type', 'text/html');
+  res.write('<html>');
+  res.write('<head>Welcome</head>');
+  res.write('<h1>Welcome to my nodejs server</h1>');
+  res.write('</html>')
+  res.end();
+
 });
 
 
