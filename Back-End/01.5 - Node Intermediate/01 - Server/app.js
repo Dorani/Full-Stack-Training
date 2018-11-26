@@ -4,6 +4,7 @@ const fs = require('fs');
 
 //event driven architecture
 const server = http.createServer((req, res) => {
+
   const url = req.url;
   const method = req.method;
 
@@ -17,6 +18,16 @@ const server = http.createServer((req, res) => {
   }
 
   if(url === '/message' && method === 'POST'){
+    const body = [];
+    //listen to certain events, data events
+    req.on('data', (chunk) => {
+      //push that chunk of data into the body array
+      body.push(chunk);
+    });
+    req.on('end', () => {
+      const parsedBody = Buffer.concat(body).toString();
+      console.log(parsedBody);
+    })
     //create a new file, dummy data
     fs.writeFileSync('message.txt', 'testing testing...');
 
