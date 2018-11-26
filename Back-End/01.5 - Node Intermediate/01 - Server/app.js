@@ -13,6 +13,12 @@ const server = http.createServer((req, res) => {
     return res.end();
   }
 
+  if(url === "/message" && method = "POST"){
+    //redirect back to "/"
+    //create a new file
+    //store info submitted
+  }
+
   console.log(req);
   res.write('<h1>hello from my nodejs server</h1>');
 });
