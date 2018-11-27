@@ -8,7 +8,7 @@
   - now if we make a request, go to www.google.com
       - we will be using http verbs to tell the server what to do with the request
       - retrieve data from the serve would be a GET request
-      - uploading, submmiting, sending data would be a POST request
+      - uploading, submitting, sending data would be a POST request
       - PUT and PATCH, would be requests to edit or updates
       - DELETE request, does exactly what it sounds like it.
 
