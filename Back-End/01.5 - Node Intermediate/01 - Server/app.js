@@ -24,18 +24,18 @@ const server = http.createServer((req, res) => {
       //push that chunk of data into the body array
       body.push(chunk);
     });
-    req.on('end', () => {
+    return req.on('end', () => {
       const parsedBody = Buffer.concat(body).toString();
       console.log(parsedBody);
       const message = parsedBody.split('=')[1];
       //create a new file, dummy data
       fs.writeFileSync('message.txt', message);
-    })
-    //allows us to write meta, pass status code '302' which stands for redirect
-    //pass js obj with headers {}
-    res.statusCode = 302;
-    res.setHeader('Location','/')
-    return res.end();
+      //allows us to write meta, pass status code '302' which stands for redirect
+      //pass js obj with headers {}
+      res.statusCode = 302;
+      res.setHeader('Location','/')
+      return res.end();
+    });
   }
 
   res.setHeader('Content-Type', 'text/html');
