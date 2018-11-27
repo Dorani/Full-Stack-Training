@@ -29,12 +29,13 @@ const server = http.createServer((req, res) => {
       console.log(parsedBody);
       const message = parsedBody.split('=')[1];
       //create a new file, dummy data
-      fs.writeFileSync('message.txt', message);
-      //allows us to write meta, pass status code '302' which stands for redirect
-      //pass js obj with headers {}
-      res.statusCode = 302;
-      res.setHeader('Location','/')
-      return res.end();
+      fs.writeFile('message.txt', message, (err) => {
+        //allows us to write meta, pass status code '302' which stands for redirect
+        //pass js obj with headers {}
+        res.statusCode = 302;
+        res.setHeader('Location','/')
+        return res.end();
+      });
     });
   }
 
