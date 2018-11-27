@@ -1,5 +1,6 @@
 //require the http module
 const http = require('http');
+//require the routes file with exported module
 const routes = require('./routes')
 
 //event driven architecture
