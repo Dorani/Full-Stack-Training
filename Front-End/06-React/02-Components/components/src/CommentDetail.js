@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import faker from 'faker';
 
 
@@ -19,6 +19,6 @@ const CommentDetail = () => {
       </div>
     </div>
   );
-}
+};
 
 export default CommentDetail;
