@@ -1,4 +1,6 @@
 import React from 'React';
+import faker from 'faker';
+
 
 const CommentDetail = () => {
   return (
@@ -18,3 +20,5 @@ const CommentDetail = () => {
     </div>
   );
 }
+
+export default CommentDetail;
