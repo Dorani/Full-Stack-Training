@@ -10,7 +10,7 @@ const App = () => {
     (position) => console.log(position)
   );
 
-  return <div>Hi there!</div>
+  return <div>Latitude: </div>
 };
 
 
