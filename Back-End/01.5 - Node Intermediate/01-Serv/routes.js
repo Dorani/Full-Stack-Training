@@ -6,11 +6,12 @@ const requestHandler = (req, res) => {
   const method = req.method;
 
   if(url === "/"){
+
     res.write('<html>');
     res.write('<head>Welcome</head>');
     res.write('<body><form action="/message" method="POST"><input type="text" name="message> "<button type ="submit">Send</button></form></body>');
-    res.write('</html>')
 
+    res.write('</html>')
     return res.end();
   }
 
