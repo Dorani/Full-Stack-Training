@@ -15,13 +15,14 @@ class App extends React.Component {
     this.state = { lat: null };
 
     window.navigator.geolocation.getCurrentPosition(
-      //if an error occurs with above we will log it
+      //callback that gets called when above goes as planned
       (position) => {
+        console.log(position)
         //take Latitude to update state object
         //don't forget set state!!
         this.setState({ lat: position.coords.latitude });
       },
-      //callback that gets called when above goes as planned
+      //if an error occurs with above we will log it
       (error) => console.log(error)
     );
   }
