@@ -12,7 +12,7 @@ class App extends React.Component {
     //pointer to the React.Component constructor
     super(props);
     //state object that will eventually contain data
-    this.state = { lat: null };
+    this.state = { lat: null, errorMessage: '' };
 
     window.navigator.geolocation.getCurrentPosition(
       //callback that gets called when above goes as planned
@@ -23,12 +23,20 @@ class App extends React.Component {
         this.setState({ lat: position.coords.latitude });
       },
       //if an error occurs with above we will log it
-      (error) => console.log(error)
+      (error) => {
+        this.setState({errorMessage: error.message});
+      }
     );
   }
   //React says we have to define render!
   render() {
-    return <div>Latitude: {this.state.lat} </div>
+    return (
+      <div>
+        Latitude: {this.state.lat}
+        <br />
+        Error: {this.state.errorMessage}
+      </div>
+  );
   }
 }
 
