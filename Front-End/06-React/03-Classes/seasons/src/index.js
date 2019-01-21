@@ -31,6 +31,8 @@ class App extends React.Component {
   //React says we have to define render!\
   //3 diff combo of state:
     //lat and no error msg = show lat
+    //no lat and have error = show error
+    
   render() {
     if (this.state.errorMessage && !this.state.lat){
       return <div>Error: {this.state.errorMessage} </div>
