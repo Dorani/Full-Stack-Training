@@ -8,7 +8,6 @@ import ReactDom from 'react-dom';
 //when we create we constructor function, we override react.componenent
 // to fix this we call super(), which is a reference to the parents constuctor
 class App extends React.Component {
-
   constructor(props) {
     //pointer to the React.Component constructor
     super(props);
@@ -17,16 +16,15 @@ class App extends React.Component {
 
     window.navigator.geolocation.getCurrentPosition(
       //if an error occurs with above we will log it
-      (error) => {
+      (position) => {
         //take Latitude to update state object
         //don't forget set state!!
         this.setState({ lat: position.coords.latitude });
       },
       //callback that gets called when above goes as planned
-      (position) => console.log(position)
+      (error) => console.log(error)
     );
   }
-
   //React says we have to define render!
   render() {
     return <div>Latitude: {this.state.lat} </div>
