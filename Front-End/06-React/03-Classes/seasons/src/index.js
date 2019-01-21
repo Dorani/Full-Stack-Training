@@ -19,6 +19,7 @@ class App extends React.Component {
       //if an error occurs with above we will log it
       (error) => {
         //take Latitude to update state object
+        //don't forget set state!!
         this.setState({ lat: position.coords.latitude });
       },
       //callback that gets called when above goes as planned
