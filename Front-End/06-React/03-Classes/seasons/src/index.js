@@ -12,6 +12,8 @@ class App extends React.Component {
   constructor(props) {
     //pointer to the React.Component constructor
     super(props);
+    //state object that will eventually contain data
+    this.statee = {};
   }
 
   //React says we have to define render!
