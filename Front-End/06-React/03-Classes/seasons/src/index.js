@@ -32,7 +32,8 @@ class App extends React.Component {
   //3 diff combo of state:
     //lat and no error msg = show lat
     //no lat and have error = show error
-    
+    //no lat and no errorMessage = show "loading"
+
   render() {
     if (this.state.errorMessage && !this.state.lat){
       return <div>Error: {this.state.errorMessage} </div>
