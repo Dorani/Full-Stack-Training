@@ -25,7 +25,7 @@ class App extends React.Component {
       (position) => console.log(position)
     );
 
-    return <div>Latitude: </div>
+    return <div>Latitude: {this.state.lat} </div>
   }
 }
 
