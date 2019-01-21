@@ -13,7 +13,7 @@ class App extends React.Component {
     //pointer to the React.Component constructor
     super(props);
     //state object that will eventually contain data
-    this.state = { lat: };
+    this.state = { lat: null };
   }
 
   //React says we have to define render!
