@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+import SeasonDisplay from './SeasonDisplay'
+
 //Refactored to class based componenet
 //Our app component is extending, or borrowing functionality
 //from the React component base class, it has a constructor function
@@ -27,7 +29,9 @@ class App extends React.Component {
     }
 
     if (!this.state.errorMessage && this.state.lat) {
-      return <div> Lattitude: {this.state.lat} </div>
+      //taking a property from the state on the app component and pass it down
+      // as a prop onto SeasonDisplay
+      return <SeasonDisplay lat = {this.state.late} />
     }
 
     return <div>Loading!</div>
