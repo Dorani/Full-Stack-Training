@@ -6,6 +6,8 @@ const getSeason = (lat, month) => {
     //if lat is > 0 returns true then reuturn summer, otherwise winter
     //ternary expressions:
     return lat > 0 ? 'summer' : 'winter';
+  } else {
+    return lat < 0 ? 'wintr' : 'summer';
   }
 }
 
