@@ -7,14 +7,11 @@ import ReactDom from 'react-dom';
 //of its own that has some code to set up react app for us
 //when we create our constructor function, we override react.componenent
 // to fix this we call super(), which is a reference to the parents constuctor
-class App extends React.Component {
-  constructor(props) {
-    //pointer to the React.Component constructor
-    super(props);
-    //state object that will eventually contain data
-    this.state = { lat: null, errorMessage: '' };
-  }
 
+class App extends React.Component {
+  //remove constructor and refactor state initialization:
+  state = { lat: null, errorMessage: '' };
+  //Data loading lifecyle method
   componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
         //callback that gets called when above goes as planned
@@ -24,13 +21,6 @@ class App extends React.Component {
       (error) => this.setState({errorMessage: error.message})
     );
   }
-
-  //React says we have to define render!
-  //3 diff combo of state:
-    //lat and no error msg = show lat
-    //no lat and have error = show error
-    //no lat and no errorMessage = show "loading"
-
   render() {
     if (this.state.errorMessage && !this.state.lat){
       return <div>Error: {this.state.errorMessage} </div>
@@ -45,3 +35,15 @@ class App extends React.Component {
 }
 
 ReactDom.render(<App />, document.querySelector("#root"));
+
+
+
+
+
+
+//Notes:
+//React says we have to define render!
+//3 diff combo of state:
+  //lat and no error msg = show lat
+  //no lat and have error = show error
+  //no lat and no errorMessage = show "loading"
