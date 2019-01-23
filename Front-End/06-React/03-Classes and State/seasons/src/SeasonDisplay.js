@@ -25,7 +25,8 @@ const getSeason = (lat, month) => {
 
 const SeasonDisplay = (props) => {
   const season = getSeason(props.lat, new Date().getMonth());
-  seasonConfig[season] //{text, iconName}
+  //destructor text and iconName from seasonConfig with the above season
+  const { text, iconName } = seasonConfig[season]; //{text, iconName}
   return (
     <div>
       <i className={`${icon} icon`} />
