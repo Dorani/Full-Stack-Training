@@ -18,7 +18,7 @@ class App extends React.Component {
   componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
         //callback that gets called when above goes as planned
-        //take Latitude to update state object
+        //take Latitude to update state of object
       (position) => this.setState({ lat: position.coords.latitude }),
         //if an error occurs with above we will log it
       (error) => this.setState({errorMessage: error.message})
