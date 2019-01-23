@@ -9,7 +9,7 @@ import ReactDom from 'react-dom';
 // to fix this we call super(), which is a reference to the parents constuctor
 
 class App extends React.Component {
-  //remove constructor and refactor state initialization:
+  //remove constructor function and refactor state initialization cause babel converts to the exact same thing:
   state = { lat: null, errorMessage: '' };
   //Data loading lifecyle method
   componentDidMount() {
