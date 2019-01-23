@@ -5,7 +5,7 @@ import ReactDom from 'react-dom';
 //Our app component is extending, or borrowing functionality
 //from the React component base class, it has a constructor function
 //of its own that has some code to set up react app for us
-//when we create we constructor function, we override react.componenent
+//when we create our constructor function, we override react.componenent
 // to fix this we call super(), which is a reference to the parents constuctor
 class App extends React.Component {
   constructor(props) {
@@ -28,7 +28,16 @@ class App extends React.Component {
       }
     );
   }
-  //React says we have to define render!\
+
+  componentDidMount(){
+    console.log("my component was rendered to the screen")
+  }
+
+  componentDidUpdate(){
+    console.log("my component updated, it re-rendered!")
+  }
+
+  //React says we have to define render!
   //3 diff combo of state:
     //lat and no error msg = show lat
     //no lat and have error = show error
