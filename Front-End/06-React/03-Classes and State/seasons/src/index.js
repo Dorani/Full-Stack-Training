@@ -29,14 +29,6 @@ class App extends React.Component {
     );
   }
 
-  componentDidMount(){
-    console.log("my component was rendered to the screen")
-  }
-
-  componentDidUpdate(){
-    console.log("my component updated, it re-rendered!")
-  }
-
   //React says we have to define render!
   //3 diff combo of state:
     //lat and no error msg = show lat
