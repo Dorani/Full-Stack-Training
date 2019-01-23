@@ -13,19 +13,15 @@ class App extends React.Component {
     super(props);
     //state object that will eventually contain data
     this.state = { lat: null, errorMessage: '' };
+  }
 
+  componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
-      //callback that gets called when above goes as planned
-      (position) => {
-        console.log(position)
+        //callback that gets called when above goes as planned
         //take Latitude to update state object
-        //don't forget set state!!
-        this.setState({ lat: position.coords.latitude });
-      },
-      //if an error occurs with above we will log it
-      (error) => {
-        this.setState({errorMessage: error.message});
-      }
+      (position) => this.setState({ lat: position.coords.latitude }),
+        //if an error occurs with above we will log it
+      (error) => this.setState({errorMessage: error.message})
     );
   }
 
