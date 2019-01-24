@@ -30,7 +30,7 @@ const SeasonDisplay = (props) => {
   //destructor text and iconName from seasonConfig with the above season
   const { text, iconName } = seasonConfig[season]; //{text, iconName}
   return (
-    <div>
+    <div className={`season-display ${season}`}>
       <i className={`icon-left massive ${iconName} icon`} />
       <h1>{text}</h1>
       <i className={`icon-right massive ${iconName} icon`} />
