@@ -1,12 +1,20 @@
 .icon-left {
   position: absolute;
-  top: 500px;
-  left: 800px;
+  top: 10px;
+  left: 10px;
 };
 
 
 .icon-right {
   position: absolute;
-  bottom: 100px;
-  right: 100px;
+  bottom: 10px;
+  right: 10px;
+}
+
+
+.season-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
