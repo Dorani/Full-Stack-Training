@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 
 import SeasonDisplay from './SeasonDisplay'
-
+import Spinner from './Spinner'
 //Refactored to class based componenet
 //Our app component is extending, or borrowing functionality
 //from the React component base class, it has a constructor function
@@ -34,7 +34,7 @@ class App extends React.Component {
       return <SeasonDisplay lat = {this.state.lat} />
     }
 
-    return <div>Loading!</div>
+    return <Spinner />;
   }
 }
 
