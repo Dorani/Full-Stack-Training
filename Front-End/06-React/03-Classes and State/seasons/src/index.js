@@ -37,10 +37,10 @@ class App extends React.Component {
 
     return <Spinner message="Please accept location request" />;
   }
-  
+  //no matter what case form above, we will surround the result with a red border
   render() {
     return (
-      <div>
+      <div className="border-red">
         {this.renderContent()}
       </div>
     )
