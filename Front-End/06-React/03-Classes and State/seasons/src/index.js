@@ -23,7 +23,8 @@ class App extends React.Component {
       (error) => this.setState({errorMessage: error.message})
     );
   }
-  render() {
+  //helper function, so our render method is clean - 1 location
+  renderContent() {
     if (this.state.errorMessage && !this.state.lat){
       return <div>Error: {this.state.errorMessage} </div>
     }
@@ -35,6 +36,14 @@ class App extends React.Component {
     }
 
     return <Spinner message="Please accept location request" />;
+  }
+  
+  render() {
+    return (
+      <div>
+        {this.renderContent()}
+      </div>
+    )
   }
 }
 
