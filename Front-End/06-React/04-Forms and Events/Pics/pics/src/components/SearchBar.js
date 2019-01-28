@@ -3,9 +3,10 @@ import React from 'react';
 
 
 class SearchBar extends React.Component {
-
-  onInputChange() {
-
+  //handler with event object
+  onInputChange(event) {
+    //containts the text the user types in
+    console.log(event.target.value);
   }
 
 
