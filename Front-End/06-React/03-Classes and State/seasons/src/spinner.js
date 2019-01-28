@@ -11,4 +11,10 @@ const Spinner = (props) => {
   );
 };
 
+//define something on the function itself
+//ie an obj that will default for generic spinners:
+Spinner.defaultProps = {
+  message: 'Loading...'
+};
+
 export default Spinner;
