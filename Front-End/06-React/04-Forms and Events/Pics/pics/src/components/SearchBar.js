@@ -16,7 +16,7 @@ class SearchBar extends React.Component {
         <div className="field">
         <label>Image Search</label>
         //prop named onChange is used for wiring up callback
-        <input type="text" onChange={() => console.log(event.target.value)} />
+        <input type="text" onChange={(event) => console.log(event.target.value)} />
         </div>
       </form>
     </div>
