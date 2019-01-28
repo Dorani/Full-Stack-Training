@@ -3,12 +3,11 @@ import React from 'react';
 
 
 class SearchBar extends React.Component {
-  //handler with event object
-  onInputChange(event) {
-    //containts the text the user types in
-    console.log(event.target.value);
-  }
-
+  // //handler with event object
+  // onInputChange(event) {
+  //   //containts the text the user types in
+  //   console.log(event.target.value);
+  // }
 
   render() {
     return (
@@ -16,7 +15,8 @@ class SearchBar extends React.Component {
       <form className="ui form">
         <div className="field">
         <label>Image Search</label>
-        <input type="text" onChange={this.onInputChange} />
+        //prop named onChange is used for wiring up callback
+        <input type="text" onChange={() => console.log(event.target.value)} />
         </div>
       </form>
     </div>
