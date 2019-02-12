@@ -8,7 +8,8 @@ class SearchBar extends React.Component {
   //prevent form from submitting itself
   onFormSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state.term)
+
+    this.props.onSubmit(this.state.term);
   }
   render() {
     return (
