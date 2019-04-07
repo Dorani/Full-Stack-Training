@@ -3,7 +3,7 @@
 # Internet, how it works?
 
   - example:
-      - someone in England visits a webpage in the states :www.worldsciencefestistival.com
+      - someone in England visits a webpage in the states :www.worldsciencefestival.com
       - their computer asks the worldsciencefestistival server for a copy of the webpage
       - the computer sticks the request into a virtual envelope called a packet
       - the packet is wrapped with specific information about that request including the pages IP
